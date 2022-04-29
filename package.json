@@ -1,7 +1,6 @@
 {
   "name": "sprint-i",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +13,14 @@
     "ejs": "^3.1.7",
     "express": "^4.18.0",
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranRSantander/miEcommerce-equipo4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FranRSantander/miEcommerce-equipo4/issues"
+  },
+  "homepage": "https://github.com/FranRSantander/miEcommerce-equipo4#readme",
+  "description": ""
 }
