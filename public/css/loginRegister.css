@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(12, 176, 147, 1);
+    height: 100vh;
+    position: relative;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.login{
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-sizing: border-box;
+    width: 320px;
+    height: auto;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.login li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.entradita{
+    width: 265px;
+    height: 32px;
+    left: 512px;
+    top:232px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 5%;
+    
+}
+
+.boton{
+    width: 265px;
+    height: 32px;
+    left: 512px;
+    top:232px;
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(73, 79, 81, 1);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 5%;
+}
+
+.enlace{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1%;
+}
+
+    
