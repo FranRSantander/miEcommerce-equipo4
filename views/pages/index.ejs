@@ -7,8 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="homeBody">
     <%- include('../partials/categories.ejs')  %>
+
     <%- include('../partials/productCard.ejs') %>
+
+    <main class="containerMain">
+        <section class="sectionInteres">
+            <h3 class="titleSectionProducts">Te puede interesar</h3>
+            <%- include('../partials/card.ejs') %>
+        </section>
+        <section class="sectionInteres">
+            <p class="titleSectionProducts">Te puede interesar</p>
+            <article class="blockProcuts">
+                <%- include('../partials/card.ejs') %>
+            </article>
+            <article class="blockProcuts">
+                <%- include('../partials/card.ejs') %>
+            </article>
+        </section>
+    </main>
+
+    <%- include('../partials/categories.ejs')  %>
 </body>
 </html>
