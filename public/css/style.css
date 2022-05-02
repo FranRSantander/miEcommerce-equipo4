@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.homeBody {
+    background-color: #efefef;
+}
+/*Estilo de barra categorias*/
+.sectionCategorias {
+    display: flex;
+    justify-content: center;
+}
+.navMenu {
+    align-items: center;
+    background-color: #333333;
+    border-radius: 16px;
+    display: flex;
+    height: 128px;
+    justify-content: space-around;
+    width: 1024px;
+    padding: 15px 0;
+}
+.menuItem {
+    align-items: center;
+    border-right: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
+.menuItem:last-child {
+    border: none;
+}
+.textMenu {
+    bottom: 20px;
+    position: absolute;
+}
+.menuIcon {
+    bottom: 50px;
+    position: absolute;
+}
+/*Section card*/
+.sectionAd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+/*Estilo de Product Card*/
+.sectionAd {
+    background-color: #0CB093;
+    position: relative;
+    z-index: -2;
+    margin-top: 56px;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+}
+.sectionAd::before {
+    content: "";
+    position: absolute;
+    background-color: #efefef;
+    top: 0%;
+    right: 0%;
+    bottom: 90%;
+    left: 0%;
+    z-index: -1;
+}
+.containerCard1 {
+    align-items: flex-end;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.246) 0%, rgba(0, 0, 0, 0.155) 35%, rgba(0,0,0,0.06235997817095584) 100%),url('../media/productCard/disneybg.jpg');
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    height: 256px;
+    width: 504px;
+}
+.containerCard2 {
+    align-items: flex-end;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.246) 0%, rgba(0, 0, 0, 0.155) 35%, rgba(0,0,0,0.06235997817095584) 100%),url('../media/productCard/hbobg.jpg');
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    height: 256px;
+    width: 504px;
+}
+.mediaAD {
+    border-radius: 8px;
+    height: 112px;
+    width: 112px;
+}
+.cardAd {
+  /*  background-color: #00000018;*/
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    text-decoration: none;
+    width: 100%;
+}
+.textCard {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 8px 24px 16px;
+}
+.titleCard {
+    font-weight: 700;
+}
+/*Estilo de las tarjetas de productos*/
+.sectionCard {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.card {
+    align-content: center;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 328px;
+    padding: 8px;
+    width: 244px;
+}
+.cardImg {
+    width: 228px;
+    height: 240px;
+    border-radius: 8px;
+}
+.cardText {
+    display: flex;
+    flex-direction: row;
+}
+.descriptionCard {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border-right: 1px solid #00000040;
+}
+.priceCard {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.priceCard span:nth-child(2) {
+    font-size: 8px;
+    font-weight: 300;
+}
+/*Seccion de cards*/
+
+.titleSectionProducts {
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+/*Index*/
+.containerMain {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.titleSectionProducts {
+    font-weight: 400;
+}
+.blockProcuts{
+    padding-bottom: 16px;
+}
+.sectionInteres {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+body {
+    background-color: #efefef;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    justify-content: space-between;
+    width: 80vw;
+}
+.main-container ul {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    height: 64px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 0px 16px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.logo1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0CB093;
+    letter-spacing: -0.1em;
+}
+.logo2 {
+    font-size: 24px;
+    color: #0CB093;
+    letter-spacing: -0.1em;
+    font-weight: 300;
+}
+.input-buscador {
+    height: 32px;
+    width: 70vw;
+    top: calc(50% - 32px/2);
+    padding: 8px 16px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.buscador {
+    position: relative;
+}
+header .buscador img {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.contenedor-botones-header {
+    display: flex;
+    gap: 8px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+/* Div con la flecha y h4 que dice "Volver": */
+.anchor-volver {
+    display: flex;
+}
+.anchor-volver a {
+    align-items: center;
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+/* Elementos li con los productos en carrito: */
+.div-producto {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 80px;
+}
+/* Etiqueta article dentro de los li: */
+main article {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    width: 100%;
+}
+/* Cartel de "Volver" y nombres de productos: */
+main h4 {
+    margin-left: 7px;
+}
+.caja-article1 {
+    align-items: center;
+    display: flex;
+}
+.caja-article2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 325px;
+}
+/* Precios de cada li y del total a pagar */
+.main-container h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+/* Div con cantidad de un producto que compra: */
+.cantidad-prod {
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 32px;
+    justify-content: space-evenly;
+    width: 80px;
+}
+main article p {
+    font-size: 12px;
+}
+.letra-contador {
+    font-weight: 700;
+}
+/* Caja de las imágenes: */
+.caja-img-producto {
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    width: 63.82px;
+}
+/* Imagen de lata de coca: */
+.img-coca img {
+    border-radius: 8px;
+}
+/* Caja de total: */
+.caja-total-puntos {
+    align-self: flex-end;
+    display: flex;
+    gap: 24px;
+    margin: 20px 0px;
+    padding-right: 16px;
+}
+.botones-gral {
+    align-items: center;
+    background: rgba(73, 79, 81, 1);
+    border-radius: 16px;
+    border: 2px solid rgba(73, 79, 81, 1);
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    font-size : 12px;
+    height: 32px;
+    justify-content: center;
+    padding: 8px 16px;
+    transition: ease-in-out 300ms all;
+    width: 110px;
+}
+.boton-pagar {
+    align-self: flex-end;
+}
+.btn-quitar {
+    width: 78px;
+}
+.boton-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(73, 79, 81, 1);
+    border: 1px solid rgba(73, 79, 81, 1);
+    transition: ease-in-out 300ms all;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.botones-gral:hover, .boton-carrito:hover {
+    background: rgba(12, 176, 147, 1);
+    border: 2px solid rgba(12, 176, 147, 1);
+}
