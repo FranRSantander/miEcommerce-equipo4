@@ -1,307 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* FOOTER */
 
-.footer{
-    background-color: #EFEFEF;
-    height: 64px;
-    width: 1024px;
-    
-    margin-left: 128px;
-    margin-right: 128px;
+.footer {
+  background-color: #efefef;
+  height: 64px;
+  width: 1024px;
 
-    color:#999999;
+  margin-left: 128px;
+  margin-right: 128px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    backdrop-filter: blur(4px);
-    
-    font-size: 12px;
-    text-align: center;
+  color: #999999;
 
-    position: fixed;
-    bottom:0px;
-  
-     
-}
-/*grupo de iconos izquierda*/
-.social-networks{
-    
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 23px;
-    
-}
-/*iconos*/
-.social-networks img{
-    height: 20px;
-    width: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  backdrop-filter: blur(4px);
+
+  font-size: 12px;
+  text-align: center;
+
+  position: fixed;
+  bottom: 0px;
 }
 
-/*grupo de iconos derecha*/
+.social-networks {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.social-networks img {
+  height: 20px;
+  width: 20px;
+}
+
 .app-stores {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/*2 links*/
+
 .app-stores a {
-    
-    
-    margin-left: 16px;
-    text-decoration: none;
+  margin-left: 16px;
+  text-decoration: none;
+}
 
+.app-stores > a > img {
+  vertical-align: middle;
+  margin-right: 7px;
 }
-/*cada icono*/
-.app-stores > a > img{
-    vertical-align:middle;
-    margin-right: 7px;
-}
-/*para que no marque violeta*/
+
 .app-stores a:visited {
-    
-    color: #999999;
-    
+  color: #999999;
 }
 
-/*menu volver*/
+.navigation-bar {
+  display: flex;
 
-.navigation-bar{
-    display:flex;
-
-    position: absolute;
-    top: 80px;
-    right: 881px;
-    left: 128px;
+  position: absolute;
+  top: 80px;
+  right: 881px;
+  left: 128px;
 }
-
 
 .anchor-volver {
-    display: flex;
+  display: flex;
 }
 .anchor-volver a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
 
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.anchor-volver img{
-    margin-left: 9px;
-    margin-right: 9px;
+.anchor-volver img {
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
-.navigation{
-    list-style: none;
+.navigation {
+  list-style: none;
 }
 
-.navigation a{
-    text-decoration: none;
-    color: black;
+.navigation a {
+  text-decoration: none;
+  color: black;
 }
 
-.navigation img{
-    margin-left: 9px;
-    margin-right: 9px;
-
+.navigation img {
+  margin-left: 9px;
+  margin-right: 9px;
 }
-
-
-
-
-
-
-
-
-
 
 /* CAJA DE PRODUCT */
 
-.product-body{
-    background-color: #EFEFEF;
+.product-body {
+  background-color: #efefef;
 }
 
-/* MAIN BOX*/
-.main-product-box{
-    background-color: #FFFFFF;
-    
-    height: 536px;
-    width: 1024px;
-    
-    position: relative;
-    left: 128px;
-    right: 128px;
-    top: 112px;
+.main-product-box {
+  background-color: #ffffff;
 
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 536px;
+  width: 1024px;
 
+  position: relative;
+  left: 128px;
+  right: 128px;
+  top: 112px;
 
-
-}
-/* LEFT BOX*/
-.left-side-img-container{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    width: 48px;
-    height: 160px;
-    
-    position: absolute;
-    left: 8px;
-    right: 968px;
-    top: 8px;
-    bottom: 368px;
-    
-    background-color: #FFFFFF;
-    
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* set size to individual images*/
-.image-1, .image-2, .image-3{
-    
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
+.left-side-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 48px;
+  height: 160px;
+
+  position: absolute;
+  left: 8px;
+  right: 968px;
+  top: 8px;
+  bottom: 368px;
+
+  background-color: #ffffff;
 }
 
-.image1-container, .image2-container, .image3-container{
-    width: 48px;
-    height: 48px;
+.image-1,
+.image-2,
+.image-3 {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
 
-/* CENTER BOX*/
-.main-picture-container{
-height: 520px;
-width: 640px;
-
-position: absolute;
-left: 64px;
-top: 8px;
-bottom:8px;
-right: 320px;
+.image1-container,
+.image2-container,
+.image3-container {
+  width: 48px;
+  height: 48px;
 }
 
-.main-image{
-    height:100%;
-    width: 100%;
-    border-radius: 8px;
+.main-picture-container {
+  height: 520px;
+  width: 640px;
+
+  position: absolute;
+  left: 64px;
+  top: 8px;
+  bottom: 8px;
+  right: 320px;
 }
 
-/* RIGHT BOX*/
-
-.right-description-container{
-    width: 304px;
-    
-    position: absolute;
-    left: 712px;
-    right: 8px;
-    top: 8px;
-    bottom: 8px;
-
-    border-radius: 8px;
-    border: solid 1px rgba(204, 204, 204, 1);
+.main-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
-.product-title{
-    
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: left;
+.right-description-container {
+  width: 304px;
 
-    margin: 8px 8px 16px 8px;
+  position: absolute;
+  left: 712px;
+  right: 8px;
+  top: 8px;
+  bottom: 8px;
 
+  border-radius: 8px;
+  border: solid 1px rgba(204, 204, 204, 1);
 }
 
-.points{
-    display: inline-block;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0em;
-    text-align: left;
+.product-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
 
-    margin: 0px 10px 24px 8px;
-
+  margin: 8px 8px 16px 8px;
 }
 
-.points-text{
-    display: inline-block;
-    
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
+.points {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
 
+  margin: 0px 10px 24px 8px;
 }
 
-.add-cart-button{
-    background-color: #494F51;
-    color: #FFFFFF;
-    display: block;
+.points-text {
+  display: inline-block;
 
-    height: 32px;
-    width: 288px;
-
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
-
-    border-radius: 16px;
-    border-style:none;
-
-    margin: 0px 8px 16px 8px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.text{
-    font-family: 'Open Sans';
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    
-   
-    text-align: left;
-    vertical-align: top;
+.add-cart-button {
+  background-color: #494f51;
+  color: #ffffff;
+  display: block;
 
+  height: 32px;
+  width: 288px;
 
-    height: 288px;
-    width: 288px;
-    
-    margin: 0px 8px 8px 8px;
-    
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
 
-    
+  border-radius: 16px;
+  border-style: none;
 
-    
+  margin: 0px 8px 16px 8px;
 }
 
+.text {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 
+  text-align: left;
+  vertical-align: top;
 
+  height: 288px;
+  width: 288px;
 
-
-
-
+  margin: 0px 8px 8px 8px;
+}
