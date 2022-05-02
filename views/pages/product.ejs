@@ -10,9 +10,12 @@
 <body class="product-body">
 
 <main>
+
+    <%- include('../partials/header1.ejs') %>
+
     <nav class="navigation-bar">
-        <div class="anchor-volver">
-            <a href="/"><img src="images/flecha_return.svg" alt="return to list">Volver al listado</a>
+        <div class="div-anchor-volver-cart">
+            <a class="anchor-volver-cart" href="/"><img src="images/flecha_return.svg" alt="return to list">Volver al listado</a>
         </div>
         <div class="navigation-container">
             <ul class="navigation">
@@ -54,9 +57,23 @@
             </div>
         </div>
     </section>
+
+    <section class="sectionInteres">
+        <h3 class="titleSectionProducts">Te puede interesar</h3>
+        <%- include('../partials/card.ejs') %>
+    </section>
+
+    <div class="menuCategoriesBot">
+        <%- include('../partials/categories.ejs') %> 
+    </div>
+
+    <div class="footerContainer">
+        <%-include('../partials/footer.ejs') %>
+    </div>
+
   </main>
 
-  <%- include('../partials/footer.ejs'); %> 
+  
 </body>
 
 

@@ -7,71 +7,71 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Cart</title>
 </head>
-<body>
+<body class="body-cart">
     <%- include('../partials/header1') %>
-    <main>
+    <main class="main-cart">
         <div class="main-container">
-            <div class="anchor-volver">
-                <a href="/"><img src="images/Vector.svg" alt="vector-volver"></a><a href="/"><h4>Volver</h4></a>
+            <div class="div-anchor-volver-cart">
+                <a class="anchor-volver-cart" href="/"><img src="images/Vector.svg" alt="vector-volver"></a><a class="anchor-volver-cart" href="/"><h4 class="h4-cart">Volver</h4></a>
             </div>
             
             <h2>Productos en tu Carrito</h2>
 
-            <ul>
+            <ul class="ul-carrito">
                 <li class="div-producto">
-                    <article>
+                    <article class="article-cart">
                         <div class="caja-article1">
                             <figure class="caja-img-producto">
                                 <img src="images/D_NQ_NP_704045-MLA44850206709_022021-O.webp" alt="imagen daniel's">
                             </figure>
-                            <h4>Jack Daniel's Tennessee Honey Botella 750 mL</h4>
+                            <h4 class="h4-cart">Jack Daniel's Tennessee Honey Botella 750 mL</h4>
                         </div>
                         <div class="caja-article2">
                             <input type="button" class="botones-gral btn-quitar" value="Quitar">
                             <div class="cantidad-prod">
-                                <p class="letra-contador">-</p>
-                                <p>1</p>
-                                <p class="letra-contador">+</p>
+                                <p class="letra-contador p-cart">-</p>
+                                <p class="p-cart">1</p>
+                                <p class="letra-contador p-cart">+</p>
                             </div>
-                            <h3>19.000</h3>
+                            <h3 class="h3-cart">19.000</h3>
                         </div>
                     </article>
                 </li>
                 <li class="div-producto">
-                    <article>
+                    <article class="article-cart">
                         <div class="caja-article1">
                             <figure class="caja-img-producto">
                                 <img src="images/combohamburguesa22.jpg" alt="imagen daniel's">
                             </figure>
-                            <h4>1 Combo Hamburguesa</h4>
+                            <h4 class="h4-cart">1 Combo Hamburguesa</h4>
                         </div>
                         <div class="caja-article2">
                             <input type="button" class="botones-gral btn-quitar" value="Quitar">
                             <div class="cantidad-prod">
-                                <p class="letra-contador">-</p>
-                                <p>1</p>
-                                <p class="letra-contador">+</p>
+                                <p class="letra-contador p-cart">-</p>
+                                <p class="p-cart">1</p>
+                                <p class="letra-contador p-cart">+</p>
                             </div>
-                            <h3>5.000</h3>
+                            <h3 class="h3-cart">5.000</h3>
                         </div>
                     </article>
                 </li>
                 <li class="div-producto">
-                    <article>
+                    <article class="article-cart">
                         <div class="caja-article1">
-                            <figure class="caja-img-producto img-coca">
-                                <img src="images/images (1).jpeg" alt="imagen daniel's">
+                            <figure class="caja-img-producto">
+                                <img class="img-coca" src="images/images (1).jpeg" alt="imagen daniel's">
                             </figure>
-                            <h4>Coca Cola Lata 220mL Pack Original x8</h4>
+                            <h4 class="h4-cart">Coca Cola Lata 220mL Pack Original x8</h4>
                         </div>
                         <div class="caja-article2">
                             <input type="button" class="botones-gral btn-quitar" value="Quitar">
                             <div class="cantidad-prod">
-                                <p class="letra-contador">-</p>
-                                <p>2</p>
-                                <p class="letra-contador">+</p>
+                                <p class="letra-contador p-cart">-</p>
+                                <p class="p-cart">2</p>
+                                <p class="letra-contador p-cart">+</p>
                             </div>
-                            <h3>1.520</h3>
+                            <h3 class="h3-cart">1.520</h3>
                         </div>
                     </article>
                 </li>
@@ -79,7 +79,7 @@
 
             <div class="caja-total-puntos">
                 <h2>Total de Puntos</h2>
-                <h3>26.420</h3>
+                <h3 class="h3-cart">26.420</h3>
             </div>
             <input type="button" class="botones-gral boton-pagar" id="boton-pagar" value="Ir a Pagar">
         </div>

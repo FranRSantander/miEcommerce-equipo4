@@ -9,7 +9,9 @@
   </head>
   <body class="homeBody">
     <%- include('../partials/header1.ejs') %> 
-    <%- include('../partials/categories.ejs') %> 
+    <div class="menuCategoriesTop">
+        <%- include('../partials/categories.ejs') %> 
+    </div>
     <%- include('../partials/productCard.ejs') %>
 
     <main class="containerMain">
@@ -18,7 +20,7 @@
         <%- include('../partials/card.ejs') %>
       </section>
       <section class="sectionInteres">
-        <p class="titleSectionProducts">Te puede interesar</p>
+        <p class="titleSectionProducts">Los más pedidos</p>
         <article class="blockProcuts">
           <%- include('../partials/card.ejs') %>
         </article>
@@ -28,7 +30,14 @@
       </section>
     </main>
 
-    <%- include('../partials/categories.ejs') %> <%-
-    include('../partials/footer.ejs') %>
+    <div class="menuCategoriesBot">
+        <%- include('../partials/categories.ejs') %> 
+    </div>
+
+    <div class="footerContainer">
+        <%-include('../partials/footer.ejs') %>
+    </div>
   </body>
 </html>
+
+
