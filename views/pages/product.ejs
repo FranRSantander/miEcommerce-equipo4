@@ -10,34 +10,34 @@
 <body class="product-body">
 
 <main>
-    <div class="navigation-bar">
+    <nav class="navigation-bar">
         <div class="anchor-volver">
             <a href="/"><img src="images/flecha_return.svg" alt="return to list">Volver al listado</a>
         </div>
-        <nav class="navigation-container">
+        <div class="navigation-container">
             <ul class="navigation">
                 <li><a href="/">
                     <img src="images/flecha_der.svg" alt="right arrow">
                     Alimentos</a></li>
             </ul>
-        </nav>
-    </div>
-    <div class="main-product-box">
+        </div>
+    </nav>
+    <section class="main-product-box">
 
         <div class="left-side-img-container">
-            <div class="image1-container">
+            <figure class="image1-container">
                 <img class="image-1"src="images/jackdaniels1.svg" alt="jack daniels bottle">
-            </div>
-            <div class="image2-container">
+            </figure>
+            <figure class="image2-container">
                 <img class="image-2" src="images/jackdaniels2.svg" alt="jack daniels bottle">
-            </div>
-            <div class="image3-container">
+            </figure>
+            <figure class="image3-container">
                 <img class="image-3" src="images/jackdaniels3.svg" alt="jack daniels bottle">
-            </div>
+            </figure>
         </div>
-        <div class="main-picture-container">
+        <figure class="main-picture-container">
             <img class="main-image" src="images/jackdanielsbig.svg" alt="jack daniels bottle">
-        </div>
+        </figure>
         <div class="right-description-container">
             <h2 class="product-title">Whiskey Jack Daniels Honey 750ml<h2>
             <p class="points">19.900 </p><p class="points-text">PUNTOS</p>
@@ -53,10 +53,12 @@
                 <p class="text">No incluye vasos, la foto es solo ilustrativa.</p>
             </div>
         </div>
-    </div>
+    </section>
   </main>
+
+  <%- include('../partials/footer.ejs'); %> 
 </body>
 
-<%- include('../partials/footer.ejs'); %> 
+
 
 </html>

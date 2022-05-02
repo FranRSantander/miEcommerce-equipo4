@@ -72,6 +72,8 @@
 .app-stores a:visited {
   color: #999999;
 }
+
+/*Barra navegación*/
 .navigation-bar {
   display: flex;
   position: absolute;
