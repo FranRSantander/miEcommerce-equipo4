@@ -6,14 +6,12 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
 .loginForm {
     margin: 0;
     background-color: rgba(12, 176, 147, 1);
     height: 100vh;
     position: relative;
 }
-
 .loginForm::before {
     content: "";
     position: absolute;
@@ -23,7 +21,6 @@
     left: 0%;
     background-color: #efefef;
 }
-
 .formTarjeta {
     display: flex;
     align-items: center;
@@ -31,7 +28,6 @@
     flex-direction: column;
     padding-top: 10%;
 }
-
 .login {
     position: relative;
     display: flex;
@@ -48,11 +44,9 @@
     justify-content: space-between;
     padding-top: 25px;
 }
-
 .login h2 {
     font-weight: normal;
 }
-
 .login li {
     list-style: none;
     display: flex;
@@ -60,7 +54,6 @@
     padding: 10px;
     font-size: large;
 }
-
 .entradita {
     width: 265px;
     height: 32px;
@@ -76,7 +69,6 @@
     padding-left: 5%;
     
 }
-
 .boton {
     width: 265px;
     height: 32px;
@@ -96,17 +88,13 @@
 .boton:hover {
     background-color: rgba(12, 176, 147, 1);
 }
-
-
-
 .enlace {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     padding: 1%;
 }
-
-.footerContainer{
+.footerContainer-1{
     border-top:1px solid #CCCCCC ;
     position: absolute;
     bottom: 0px;

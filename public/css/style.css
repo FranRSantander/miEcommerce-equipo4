@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+/*Imports de Pages*/
+@import url("./pages/loginRegister.css");
 @import url("./pages/index.css");
 @import url("./pages/products.css");
 @import url("./layaout/product-card.css");
@@ -6,207 +8,22 @@
 @import url("./layaout/menu-categories.css");
 @import url("./layaout/footer.css");
 
+@import url("./pages/cart.css");
+/*Imports de Layouts*/
+@import url("./layaout/product-card.css");
+@import url("./layaout/ad-card.css");
+@import url("./layaout/menu-categories.css");
+@import url("./layaout/header1.css");
+@import url("./layaout/header.css");
+/*Hoja de reset*/
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
-.body-cart {
-  background-color: #efefef;
-}
-.main-container {
-  display: flex;
-  flex-direction: column;
-  height: 442px;
-  justify-content: space-between;
-  width: 80vw;
-}
-.ul-carrito {
-  display: flex;
-  flex-direction: column;
-  height: 270px;
-  justify-content: space-between;
-}
-.header-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  height: 64px;
-  position: fixed;
-  top: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  padding: 0px 16px;
-}
 ::-webkit-scrollbar {
   display: none;
-}
-.logo1 {
-  font-size: 24px;
-  font-weight: 800;
-  color: #0cb093;
-  letter-spacing: -0.1em;
-}
-.logo2 {
-  font-size: 24px;
-  color: #0cb093;
-  letter-spacing: -0.1em;
-  font-weight: 300;
-}
-.input-buscador {
-  height: 32px;
-  width: 70vw;
-  top: calc(50% - 32px / 2);
-  padding: 8px 16px;
-
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  border-radius: 16px;
-}
-.buscador {
-  position: relative;
-}
-.img-lupa {
-  position: absolute;
-  right: 10px;
-  top: 4px;
-  color: rgba(0, 0, 0, 0.5);
-}
-.contenedor-botones-header {
-  display: flex;
-  gap: 8px;
-}
-.main-cart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 80px;
-}
-/* Div con la flecha y h4 que dice "Volver": */
-.div-anchor-volver-cart {
-  display: flex;
-}
-.anchor-volver-cart {
-  align-items: center;
-  color: black;
-  display: flex;
-  text-decoration: none;
-}
-/* Elementos li con los productos en carrito: */
-.div-producto {
-  background-color: white;
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  height: 80px;
-}
-/* Etiqueta article dentro de los li: */
-.article-cart {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 8px;
-  width: 100%;
-}
-/* Cartel de "Volver" y nombres de productos: */
-.h4-cart {
-  margin-left: 7px;
-  font-weight: 400;
-}
-.h2-cart {
-  font-weight: 400;
-}
-.caja-article1 {
-  align-items: center;
-  display: flex;
-}
-.caja-article2 {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  width: 325px;
-}
-/* Precios de cada li y del total a pagar: */
-.h3-cart {
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: 20px;
-}
-/* Div con cantidad de un producto que compra: */
-.cantidad-prod {
-  align-items: center;
-  border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  display: flex;
-  height: 32px;
-  justify-content: space-evenly;
-  width: 80px;
-}
-.p-cart {
-  font-size: 12px;
-}
-.letra-contador {
-  font-weight: 700;
-}
-/* Caja de las imágenes: */
-.caja-img-producto {
-  display: flex;
-  height: 64px;
-  justify-content: center;
-  width: 63.82px;
-}
-/* Imagen de lata de coca: */
-.img-coca {
-  border-radius: 8px;
-}
-/* Caja de total: */
-.caja-total-puntos {
-  align-self: flex-end;
-  display: flex;
-  gap: 24px;
-  margin: 20px 0px;
-  padding-right: 16px;
-}
-.botones-gral {
-  align-items: center;
-  background: rgba(73, 79, 81, 1);
-  border-radius: 16px;
-  border: 2px solid rgba(73, 79, 81, 1);
-  color: rgba(255, 255, 255, 1);
-  flex-direction: column;
-  font-size: 12px;
-  height: 32px;
-  justify-content: center;
-  padding: 8px 16px;
-  transition: ease-in-out 300ms all;
-  width: 110px;
-}
-.boton-pagar {
-  align-self: flex-end;
-}
-.btn-quitar {
-  width: 78px;
-}
-.boton-carrito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(73, 79, 81, 1);
-  border: 1px solid rgba(73, 79, 81, 1);
-  transition: ease-in-out 300ms all;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-.botones-gral:hover,
-.boton-carrito:hover {
-  background: rgba(12, 176, 147, 1);
-  border: 2px solid rgba(12, 176, 147, 1);
 }
 
 /* lo consumen todas las páginas */
