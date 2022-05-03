@@ -149,6 +149,10 @@
   height: 328px;
   padding: 8px;
   width: 244px;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover{
+  box-shadow:  0px 5px 4px rgba(0, 0, 0, 0.419);
 }
 .linkCard {
   text-decoration: none;
@@ -403,15 +407,9 @@
 }
 
 /* FOOTER */
-<<<<<<< HEAD
-.footerContainer{
-  border-top:1px solid #CCCCCC ;
-  display: flex;  
-=======
 .footerContainer {
   border-top: 1px solid #cccccc;
   display: flex;
->>>>>>> carokuba
   justify-content: center;
   align-self: flex-end;
 }
@@ -614,9 +612,6 @@
   line-height: 16px;
   text-align: left;
   margin-top: 8px;
-<<<<<<< HEAD
-}
-=======
 }
 /*Sección Te puede interesar-Products*/
 .suggestions-section-wide {
@@ -624,4 +619,3 @@
   flex-direction: column;
   align-items: center;
 }
->>>>>>> carokuba
