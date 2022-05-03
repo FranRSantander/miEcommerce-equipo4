@@ -1,0 +1,39 @@
+
+  .sectionCategorias {
+    display: flex;
+    justify-content: center;
+  }
+  .navMenu {
+    align-items: center;
+    background-color: #333333;
+    border-radius: 16px;
+    display: flex;
+    height: 128px;
+    justify-content: space-around;
+    width: 1024px;
+    padding: 15px 0;
+  }
+  .menuItem {
+    align-items: center;
+    border-right: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+  }
+  .menuItem:last-child {
+    border: none;
+  }
+  .textMenu {
+    bottom: 20px;
+    position: absolute;
+  }
+  .menuIcon {
+    bottom: 50px;
+    position: absolute;
+  }

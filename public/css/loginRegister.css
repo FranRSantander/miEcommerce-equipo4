@@ -91,7 +91,13 @@
     line-height: 16px;
     padding-left: 5%;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
+.boton:hover {
+    background-color: rgba(12, 176, 147, 1);
+}
+
+
 
 .enlace {
     display: flex;
