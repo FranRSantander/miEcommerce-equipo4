@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="homeBody">
+</head>
+<body class="homeBody">
     <%- include('../partials/header1.ejs') %> 
     <div class="menuCategoriesTop">
         <%- include('../partials/categories.ejs') %> 
     </div>
     <%- include('../partials/productCard.ejs') %>
     <main class="containerMain">
-      <section class="sectionInteres">
-        <h3 class="titleSectionProducts">Te puede interesar</h3>
-        <%- include('../partials/card.ejs') %>
-      </section>
-      <section class="sectionInteres">
-        <p class="titleSectionProducts">Los más pedidos</p>
-        <article class="blockProcuts">
-          <%- include('../partials/card.ejs') %>
-        </article>
-        <article class="blockProcuts">
-          <%- include('../partials/card.ejs') %>
-        </article>
-      </section>
+        <section class="sectionInteres">
+            <h3 class="titleSectionProducts">Te puede interesar</h3>
+            <%- include('../partials/card.ejs') %>
+        </section>
+        <section class="sectionInteres">
+            <p class="titleSectionProducts">Los más pedidos</p>
+            <article class="blockProcuts">
+                <%- include('../partials/card.ejs') %>
+            </article>
+            <article class="blockProcuts">
+                <%- include('../partials/card.ejs') %>
+            </article>
+        </section>
     </main>
     <div class="menuCategoriesBot">
         <%- include('../partials/categories.ejs') %> 
@@ -34,5 +34,5 @@
     <div class="footerContainer">
         <%-include('../partials/footer.ejs') %>
     </div>
-  </body>
+</body>
 </html>
