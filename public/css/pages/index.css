@@ -1,0 +1,29 @@
+.homeBody {
+    background-color: #efefef;
+}
+.menuCategoriesTop {
+    margin-top: 128px;
+}
+.menuCategoriesBot {
+    margin: 48px 0 48px 0;
+}
+.containerMain {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.sectionInteres {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.titleSectionProducts {
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+.blockProcuts {
+    padding-bottom: 16px;
+}

@@ -1,0 +1,51 @@
+/*Estilo de las tarjetas de productos*/
+.sectionCard {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.card {
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 328px;
+    padding: 8px;
+    width: 244px;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.274);
+}
+.linkCard {
+    text-decoration: none;
+    color: black;
+}
+.cardImg {
+    width: 228px;
+    height: 240px;
+    border-radius: 8px;
+}
+.cardText {
+    display: flex;
+    flex-direction: row;
+}
+.descriptionCard {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border-right: 1px solid #00000040;
+}
+.priceCard {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.priceCard span:nth-child(2) {
+    font-size: 8px;
+    font-weight: 300;
+}
