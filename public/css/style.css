@@ -150,6 +150,10 @@
   padding: 8px;
   width: 244px;
 }
+.linkCard {
+  text-decoration: none;
+  color: black;
+}
 .cardImg {
   width: 228px;
   height: 240px;
@@ -403,6 +407,7 @@
   border-top:1px solid #CCCCCC ;
   display: flex;  
   justify-content: center;
+  align-self: flex-end;
 }
 .footer {
   background-color: #efefef;
