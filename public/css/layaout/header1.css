@@ -1,0 +1,83 @@
+.header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    height: 64px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 0px 16px;
+  }
+  .logoLink {
+    text-decoration: none;
+  }
+  .logo1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0cb093;
+    letter-spacing: -0.1em;
+  }
+  .logo2 {
+    font-size: 24px;
+    color: #0cb093;
+    letter-spacing: -0.1em;
+    font-weight: 300;
+  }
+  .input-buscador {
+    height: 32px;
+    width: 70vw;
+    top: calc(50% - 32px / 2);
+    padding: 8px 16px;
+  
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  .buscador {
+    position: relative;
+  }
+  .img-lupa {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .contenedor-botones-header {
+    display: flex;
+    gap: 8px;
+  }
+  .botones-gral {
+    align-items: center;
+    background: rgba(73, 79, 81, 1);
+    border-radius: 16px;
+    border: 2px solid rgba(73, 79, 81, 1);
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    font-size: 12px;
+    height: 32px;
+    justify-content: center;
+    padding: 8px 16px;
+    transition: ease-in-out 300ms all;
+    width: 110px;
+  }
+  .boton-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(73, 79, 81, 1);
+    border: 1px solid rgba(73, 79, 81, 1);
+    transition: ease-in-out 300ms all;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .botones-gral:hover,
+  .boton-carrito:hover {
+    background: rgba(12, 176, 147, 1);
+    border: 2px solid rgba(12, 176, 147, 1);
+  }
