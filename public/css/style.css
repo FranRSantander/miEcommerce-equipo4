@@ -186,10 +186,9 @@
 }
 /*Index*/
 .containerMain {
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .titleSectionProducts {
   font-weight: 400;
@@ -398,8 +397,8 @@
 /* FOOTER */
 .footerContainer{
   border-top:1px solid #CCCCCC ;
-  display: flex-direction;
-  position: absolute;
+  display: flex;  
+  justify-content: center;
 }
 .footer {
   background-color: #efefef;

@@ -101,6 +101,8 @@
 }
 
 .footerContainer{
-    bottom: auto;
-    align-items: flex-end;
+    border-top:1px solid #CCCCCC ;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
