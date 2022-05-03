@@ -1,0 +1,62 @@
+.footer {
+  background-color: #efefef;
+  height: 64px;
+  width: 1024px;
+  margin-left: 128px;
+  margin-right: 128px;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  font-size: 12px;
+  text-align: center;
+}
+.social-networks {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+}
+.twitter-logo {
+  width: 20.92px;
+  height: 17px;
+}
+.facebook-logo {
+  width: 20px;
+  height: 19.92px;
+}
+.insta-logo {
+  width: 20px;
+  height: 20px;
+}
+.youtube-logo {
+  width: 20px;
+  height: 14px;
+}
+.app-stores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-stores a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #999999;
+}
+.app-stores > a > img {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.apple-logo {
+  width: 16.23px;
+  height: 20px;
+}
+.googleplay-logo {
+  width: 17.75px;
+  height: 19.7px;
+}
+.app-stores a:visited {
+  color: #999999;
+}
