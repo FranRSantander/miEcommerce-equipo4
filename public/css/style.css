@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+/*Imports de Pages*/
 @import url("./pages/loginRegister.css");
 @import url("./pages/index.css");
+@import url("./pages/cart.css");
+/*Imports de Layouts*/
 @import url("./layaout/product-card.css");
 @import url("./layaout/ad-card.css");
 @import url("./layaout/menu-categories.css");
 @import url("./layaout/header1.css");
-@import url("./pages/cart.css");
+@import url("./layaout/header.css");
+/*Hoja de reset*/
 * {
   padding: 0px;
   margin: 0px;
