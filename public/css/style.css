@@ -11,10 +11,10 @@
 }
 /*Estilo de barra categorias*/
 .menuCategoriesTop {
-    margin-top: 128px;
+  margin-top: 128px;
 }
 .menuCategoriesBot {
-    margin: 48px 0 48px 0;
+  margin: 48px 0 48px 0;
 }
 .sectionCategorias {
   display: flex;
@@ -403,9 +403,15 @@
 }
 
 /* FOOTER */
+<<<<<<< HEAD
 .footerContainer{
   border-top:1px solid #CCCCCC ;
   display: flex;  
+=======
+.footerContainer {
+  border-top: 1px solid #cccccc;
+  display: flex;
+>>>>>>> carokuba
   justify-content: center;
   align-self: flex-end;
 }
@@ -454,6 +460,7 @@
 .app-stores a {
   margin-left: 16px;
   text-decoration: none;
+  color: #999999;
 }
 .app-stores > a > img {
   vertical-align: middle;
@@ -470,64 +477,56 @@
 .app-stores a:visited {
   color: #999999;
 }
-
-/*Barra navegación*/
-.navigation-bar {
-  display: flex;
-  
-  margin-top: 80px;
+/*PRODUCTS*/
+.product-body {
+  background-color: #efefef;
 }
-.anchor-volver {
+/*Main de Productos*/
+.main-products-container-wide {
   display: flex;
-}
-.anchor-volver a {
-  text-decoration: none;
-  color: black;
-  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-top: 81px;
+}
+.navigation-container {
+  display: flex;
+  margin-bottom: 9px;
+}
+.anchor-return,
+.nav-category {
+  text-decoration: none;
+  color: #000000;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
-.anchor-volver img {
-  margin-left: 9px;
-  margin-right: 9px;
-}
 .navigation {
   list-style: none;
 }
-.navigation a {
-  text-decoration: none;
-  color: black;
-}
-.navigation img {
-  margin-left: 9px;
-  margin-right: 9px;
-}
-/* CAJA DE PRODUCT */
-.product-body {
-  background-color: #efefef;
-}
 .main-product-box {
-  background-color: #ffffff;
-  height: 536px;
-  width: 1024px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #ffffff;
+  height: 536px;
+  width: 1024px;
   border-radius: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navigation-container img {
+  margin-left: 9px;
+  margin-right: 9px;
 }
 .left-side-img-container {
   display: flex;
   flex-direction: column;
-  
-  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: space-around;
+  margin: 8px 8px 0 8px;
   width: 48px;
   height: 160px;
-  background-color: #ffffff;
 }
 .image-1,
 .image-2,
@@ -545,6 +544,7 @@
 .main-picture-container {
   height: 520px;
   width: 640px;
+  margin: 8px 8px 8px 0;
 }
 .main-image {
   height: 100%;
@@ -553,9 +553,9 @@
 }
 .right-description-container {
   width: 304px;
-  
   border-radius: 8px;
   border: solid 1px rgba(204, 204, 204, 1);
+  margin: 8px 8px 8px 0;
 }
 .product-title {
   font-size: 24px;
@@ -614,4 +614,14 @@
   line-height: 16px;
   text-align: left;
   margin-top: 8px;
+<<<<<<< HEAD
 }
+=======
+}
+/*Sección Te puede interesar-Products*/
+.suggestions-section-wide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+>>>>>>> carokuba
