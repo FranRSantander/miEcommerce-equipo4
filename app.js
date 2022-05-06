@@ -4,36 +4,25 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 ///////////////////////////////////////
+const indexRoutes = require('./routes/indexRoutes')
 
+const usersRoutes = require('./routes/usersRoutes')
+
+const productsRoutes = require('./routes/productsRoutes')
+///////////////////////////////////////
 app.set('view engine', 'ejs');
 
-app.set('views','./views');
+app.set('views','./views/pages');
 
 app.use(express.static('public'));
+
 /////////////////////////////////////
-app.get('/',(req, res)=>{
-    res.render('pages/index');
-});
+app.use('/', indexRoutes);
 
-app.get('/products',(req, res)=>{
-    res.render('pages/product');
-});
+app.use('/users', usersRoutes);
 
-app.get('/cart',(req, res)=>{
-    res.render('pages/cart');
-});
+app.use('/', productsRoutes);
 
-app.get('/checkout',(req, res)=>{
-    res.render('pages/checkout');
-});
-
-app.get('/register',(req, res)=>{
-    res.render('pages/register');
-});
-
-app.get('/login',(req, res)=>{
-    res.render('pages/login');
-});
 ///////////////////////////////////////
 app.listen(PORT,()=>{
     console.log(`Servidor corriendo en el puerto ${PORT}`);
