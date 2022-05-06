@@ -10,7 +10,7 @@
   <body class="loginForm">
     <%- include("../partials/header")%>
     <main class="formTarjeta">
-      <div class="login">
+      <form class="login" action="/users/register" method="post">
         <ul>
           <li><h2>¡Registrate!</h2></li>
           <li>
@@ -34,7 +34,7 @@
             <a href="/"><button class="boton">Crear Cuenta</button></a>
           </li>
         </ul>
-      </div>
+      </form>
       <div class="enlace">
         <p>¿Ya tienes cuenta?<a href="login">Iniciar sesión</a></p>
       </div>
