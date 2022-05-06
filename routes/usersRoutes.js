@@ -7,15 +7,15 @@ router.get("/register", usersController.renderSite);
 router.post("/register", usersController.registerUser);
 
 router.get("/login", (req, res) => {
-  res.render("pages/login");
+  res.render("login");
 });
 
 router.get("/checkout", (req, res) => {
-  res.render("pages/checkout");
+  res.render("checkout");
 });
 
 router.get("/cart", (req, res) => {
-  res.render("pages/cart");
+  res.render("cart");
 });
 
 module.exports = router;
