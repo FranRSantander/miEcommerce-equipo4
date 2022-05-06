@@ -1,19 +1,19 @@
 const router = require('express').Router();
 
 router.get('/register',(req, res)=>{
-    res.render('pages/register');
+    res.render('register');
 });
 
 router.get('/login',(req, res)=>{
-    res.render('pages/login');
+    res.render('login');
 });
 
 router.get('/checkout',(req, res)=>{
-    res.render('pages/checkout');
+    res.render('checkout');
 });
 
 router.get('/cart',(req, res)=>{
-    res.render('pages/cart');
+    res.render('cart');
 });
 
 module.exports = router;

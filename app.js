@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-let path = require('path');
+
 const PORT = process.env.PORT || 8080;
 ///////////////////////////////////////
 const indexRoutes = require('./routes/indexRoutes')
@@ -12,13 +12,12 @@ const productsRoutes = require('./routes/productsRoutes')
 ///////////////////////////////////////
 app.set('view engine', 'ejs');
 
-app.set('views','./views');
+app.set('views','./views/pages');
 
-app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.static('public'));
 
 /////////////////////////////////////
-app.use('/', indexRoutes)
+app.use('/', indexRoutes);
 
 app.use('/users', usersRoutes);
 
