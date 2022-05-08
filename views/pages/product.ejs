@@ -31,13 +31,13 @@
 
                 <div class="left-side-img-container">
                     <figure class="image1-container">
-                        <img class="image-1"src="/images/jackdaniels1.svg" alt="jack daniels bottle">
+                        <img class="image-1" src=<%= `${product.image}` %> alt="jack daniels bottle">
                     </figure>
                     <figure class="image2-container">
-                        <img class="image-2" src="/images/jackdaniels2.svg" alt="jack daniels bottle">
+                        <img class="image-2" src=<%= `${product.image}` %> alt="jack daniels bottle">
                     </figure>
                     <figure class="image3-container">
-                        <img class="image-3" src="/images/jackdaniels3.svg" alt="jack daniels bottle">
+                        <img class="image-3" src=<%= `${product.image}` %> alt="jack daniels bottle">
                     </figure>
                 </div>
                 <figure class="main-picture-container">
@@ -45,17 +45,10 @@
                 </figure>
                 <div class="right-description-container">
                     <h2 class="product-title"><%= `${product.title}` %><h2>
-                    <p class="points">19.900 </p><p class="points-text">PUNTOS</p>
+                    <p class="points"><%= `${product.price}` %></p><p class="points-text">PUNTOS</p>
                     <input class= "add-cart-button" type="button" value="Agregar al Carrito">
                     <div class="text-description-container">
-                        <p class="text">Un verdaderamente fabuloso licor de whisky Jack Daniels. Está hecho con una mezcla de ricas especias y suave, 
-                            miel tersa y el resultado es delicioso sobre hielo y café.</p>
-                        <p class="text">Aroma de caramel y roble carbonizado, un poco de flor de naranja, miel de manuka
-                            y vainilla.</p>
-                        <p class="text">Boca: grueso y cremoso, con notas de vainilla, roble tostado, miel de nuevo, un poco de 
-                            albaricoque también.</p>
-                        <p class="text">Acabado: De buena longitud - redondeado y rico.</p>
-                        <p class="text">No incluye vasos, la foto es solo ilustrativa.</p>
+                        <p class="text"><%= `${product.description}` %></p>
                     </div>
                 </div>
             </section>

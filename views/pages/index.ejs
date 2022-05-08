@@ -13,17 +13,17 @@
         <%- include('../partials/categories.ejs') %> 
     </div>
     <%- include('../partials/adCard.ejs') %>
+    
     <div class="suggestions-section-tight">
         <ul>
             <% products.forEach(product => { %>
                 <li>
-                    <a href= <%= `/product/${product.id}` %> ><h3 class="titleSectionProducts"><%= product.title %></h3></a>
+                    <a href= <%= `/product/${product.id}` %> ><span><%= product.title %></span></a>
                 </li>
             <% }) %>
         </ul>
-        
-        <%- include('../partials/jackDanielsCard.ejs') %>
     </div>
+
     <main class="containerMain">
         <section class="sectionInteres">
             <h3 class="titleSectionProducts">Te puede interesar</h3>

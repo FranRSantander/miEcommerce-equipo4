@@ -7,6 +7,17 @@ const getAllProducts = (req, res)=>{
     fetch(`${urlBase}/products`)
     .then(response => response.json())
     .then(products => {
+
+        products.sort((obj1,obj2)=>{
+            if(obj1.rating.rate < obj2.rating.rate){
+                return 1;
+            }else if(obj1.rating.rate > obj2.rating.rate){
+                return -1;
+            }else{
+                return 0;
+            }
+        });
+        
         res.render('index', {products});
     })
     .catch(err => console.log(err));

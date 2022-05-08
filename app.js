@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:true}));
 
 app.use('/', indexRoutes);
 app.use('/users', usersRoutes);
-app.use('/', productsRoutes);
+app.use('/product', productsRoutes);
 
 ///////////////////////////////////////
 
