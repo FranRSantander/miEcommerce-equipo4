@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="product-body">
     <%- include('../partials/header1.ejs') %>
@@ -14,14 +14,14 @@
         <div class="main-products-container-tight">
             <nav class="navigation-container">
                 <div>
-                    <a class="anchor-return" href="/"><img src="images/flecha_return.svg" alt="return to list">Volver al listado</a>
+                    <a class="anchor-return" href="/"><img src="/images/flecha_return.svg" alt="return to list">Volver al listado</a>
                 </div>
                 
                 
                 <div class="nav-bar">
                     <ul class="navigation">
                         <li><a class="nav-category" href="/">
-                            <img src="images/flecha_der.svg" alt="right arrow">
+                            <img src="/images/flecha_der.svg" alt="right arrow">
                             Alimentos</a></li>
                     </ul>
                 </div>
@@ -31,20 +31,20 @@
 
                 <div class="left-side-img-container">
                     <figure class="image1-container">
-                        <img class="image-1"src="images/jackdaniels1.svg" alt="jack daniels bottle">
+                        <img class="image-1"src="/images/jackdaniels1.svg" alt="jack daniels bottle">
                     </figure>
                     <figure class="image2-container">
-                        <img class="image-2" src="images/jackdaniels2.svg" alt="jack daniels bottle">
+                        <img class="image-2" src="/images/jackdaniels2.svg" alt="jack daniels bottle">
                     </figure>
                     <figure class="image3-container">
-                        <img class="image-3" src="images/jackdaniels3.svg" alt="jack daniels bottle">
+                        <img class="image-3" src="/images/jackdaniels3.svg" alt="jack daniels bottle">
                     </figure>
                 </div>
                 <figure class="main-picture-container">
-                    <img class="main-image" src="images/jackdanielsbig.svg" alt="jack daniels bottle">
+                    <img class="main-image" src=<%= `${product.image}` %> alt=<%= `${product.title}` %>>
                 </figure>
                 <div class="right-description-container">
-                    <h2 class="product-title">Whiskey Jack Daniels Honey 750ml<h2>
+                    <h2 class="product-title"><%= `${product.title}` %><h2>
                     <p class="points">19.900 </p><p class="points-text">PUNTOS</p>
                     <input class= "add-cart-button" type="button" value="Agregar al Carrito">
                     <div class="text-description-container">
