@@ -8,7 +8,6 @@ const indexRoutes = require('./routes/indexRoutes')
 const usersRoutes = require('./routes/usersRoutes')
 const productsRoutes = require('./routes/productsRoutes')
 const createError = require('http-errors');
-
 ///////////////////////////////////////
 
 app.set('view engine', 'ejs');

@@ -13,29 +13,15 @@
         <%- include('../partials/categories.ejs') %> 
     </div>
     <%- include('../partials/adCard.ejs') %>
-    
-    <div class="suggestions-section-tight">
-        <ul>
-            <% products.forEach(product => { %>
-                <li>
-                    <a href= <%= `/product/${product.id}` %> ><span><%= product.title %></span></a>
-                </li>
-            <% }) %>
-        </ul>
-    </div>
-
     <main class="containerMain">
         <section class="sectionInteres">
             <h3 class="titleSectionProducts">Te puede interesar</h3>
-            <%- include('../partials/jackDanielsCard.ejs') %>
+            <%- include('../partials/suggestedCard.ejs') %>
         </section>
         <section class="sectionInteres">
             <p class="titleSectionProducts">Los más pedidos</p>
             <article class="blockProcuts">
-                <%- include('../partials/cokeCard.ejs') %>
-            </article>
-            <article class="blockProcuts">
-                <%- include('../partials/productCard.ejs') %>
+                <%- include('../partials/mostWanted.ejs') %>
             </article>
         </section>
     </main>
