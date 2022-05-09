@@ -22,6 +22,11 @@ app.use('/', indexRoutes);
 app.use('/users', usersRoutes);
 app.use('/product', productsRoutes);
 
+app.use((req,res,next)=>{
+    res.status(404).send('Ruta incorrecta');
+    next();
+})
+
 ///////////////////////////////////////
 
 app.listen(PORT,()=>{
