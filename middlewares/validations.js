@@ -19,6 +19,7 @@ const validationsRegister = [
           resolve(true);
         });
       }),
+
     check("password1")
       .notEmpty()
       .withMessage("Debe ingresar una contraseña")
@@ -33,8 +34,16 @@ const validationsRegister = [
             }
             resolve(true);
           });
+        }).bail()
+        .custom((value, { req }) => {
+          return new Promise((resolve, reject) => {
+              if (typeof(user.contrasenia) !== Number) {
+                reject(new Error("La contraseña debe ser numérica"));
+              }
+              resolve(true);
+            });
+          }),
           
-        }),
     check("password2")
       .notEmpty()
       .withMessage("Debe ingresar una contraseña")
@@ -57,7 +66,15 @@ const validationsRegister = [
             }
             resolve(true);
             });   
-        })
+        }).bail()
+        .custom((value, { req }) => {
+          return new Promise((resolve, reject) => {
+              if (typeof(user.contrasenia) !== Number) {
+                reject(new Error("La contraseña debe ser numérica"));
+              }
+              resolve(true);
+            });
+          })
   ];
 
   let validationsLogin = [
