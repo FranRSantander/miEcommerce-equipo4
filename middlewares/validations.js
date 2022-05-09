@@ -35,14 +35,7 @@ const validationsRegister = [
             resolve(true);
           });
         }).bail()
-        .custom((value, { req }) => {
-          return new Promise((resolve, reject) => {
-              if (typeof(user.contrasenia) !== Number) {
-                reject(new Error("La contraseña debe ser numérica"));
-              }
-              resolve(true);
-            });
-          }),
+        .isNumeric().withMessage("La contraseña debe ser numérica"),
           
     check("password2")
       .notEmpty()
@@ -67,14 +60,7 @@ const validationsRegister = [
             resolve(true);
             });   
         }).bail()
-        .custom((value, { req }) => {
-          return new Promise((resolve, reject) => {
-              if (typeof(user.contrasenia) !== Number) {
-                reject(new Error("La contraseña debe ser numérica"));
-              }
-              resolve(true);
-            });
-          })
+        .isNumeric().withMessage("La contraseña debe ser numérica")
   ];
 
   let validationsLogin = [
