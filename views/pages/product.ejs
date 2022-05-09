@@ -32,40 +32,39 @@
                 <div class="left-side-img-container">
                     <figure class="image1-container">
                         <img class="image-1"
-                        
-                            <% if(locals.product.image){%>
+                            <% if(product.image){%>
                                 src=<%= `${product.image}` %>
                             <% }else{ %>
                                 src="/../../media/card/fallback-image.jpg"
                             <% } %>
 
-                            alt="jack daniels bottle"
+                            alt=<%= `${product.title}` %>
                         
                         >
                     </figure>
                     <figure class="image2-container">
                         <img class="image-2"
                         
-                            <% if(locals.product.image){%>
+                            <% if(product.image){%>
                                 src=<%= `${product.image}` %>
                             <% }else{ %>
                                 src="/../../media/card/fallback-image.jpg"
                             <% } %>
 
-                            alt="jack daniels bottle"
+                            alt=<%= `${product.title}` %>
                         
                         >
                     </figure>
                     <figure class="image3-container">
                         <img class="image-3"
                         
-                            <% if(locals.product.image){%>
+                            <% if(product.image){%>
                                 src=<%= `${product.image}` %>
                             <% }else{ %>
                                 src="/../../media/card/fallback-image.jpg"
                             <% } %>
 
-                            alt="jack daniels bottle"
+                            alt=<%= `${product.title}` %>
                         
                         >
                     </figure>
@@ -73,7 +72,7 @@
                 <figure class="main-picture-container">
                     <img class="main-image"
 
-                        <% if(locals.product.image){%>
+                        <% if(product.image){%>
                             src=<%= `${product.image}` %>
                         <% }else{ %>
                             src="/../../media/card/fallback-image.jpg"
