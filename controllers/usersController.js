@@ -1,32 +1,45 @@
-const express = require("express");
 const fs = require("fs");
 const { validationResult } = require("express-validator");
+const arrayUsers = require("../db/users.json")
 
-let renderPage = (req, res) => {
+let renderRegister = (req, res) => {
   res.render("register");
   console.log(validationResult(req));
 };
 
 let registerUser = (req, res) => {
   const errors = validationResult(req);
-
   if (!errors.isEmpty()) {
-    //si hay errores:
-    res.render("register", { errors: errors.array(), old: req.body }); //vuelve a cargar esa pagina; manda el array de errores al ejs; manda el contenido de req.body
+    res.render("register", { errors: errors.array(), old: req.body });
   } else {
-    const arrayUsersObjects = JSON.parse(
-      fs.readFileSync("./db/users.json", "utf-8") //lee el json y lo convierte en object
-    );
-    arrayUsersObjects.push(req.body); //inserta el objeto del request.body
-    const jsonArrayUsers = JSON.stringify(arrayUsersObjects); //lo transforma a json
-    fs.writeFileSync("./db/users.json", jsonArrayUsers); //lo graba en el json
-    res.send("Registro exitoso. Verifique su casilla para validar el mail"); //mensaje de exito
+    arrayUsers.push(req.body);
+    const jsonArrayUsers = JSON.stringify(arrayUsers);
+    fs.writeFileSync("./db/users.json", jsonArrayUsers);
+    res.send("Registro exitoso");
   }
 };
 
+let renderLogin = (req, res) => {
+  res.render("login");
+}
+
+let login = (req, res) => {
+  const {email , pass} = req.body;
+  const userBuscado = arrayUsers.find((user)=>{
+    return user.email === email
+  });
+  if(userBuscado===undefined){
+    res.render("login", {err:"Usuario no Existente"}) 
+  }
+  res.redirect("/");
+
+}
+
 let usersController = {
-  renderPage: renderPage,
+  renderRegister: renderRegister,
   registerUser: registerUser,
+  renderLogin: renderLogin,
+  login: login
 };
 
 module.exports = usersController;
