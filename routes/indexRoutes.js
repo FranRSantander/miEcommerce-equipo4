@@ -1,7 +1,7 @@
 const router = require('express').Router();
+const { getAllProducts } = require('../controllers/products');
 
-router.get('/',(req, res)=>{
-    res.render('index');
-});
+
+router.get('/', getAllProducts);
 
 module.exports = router;
