@@ -1,0 +1,19 @@
+<ul class="sectionCard">
+    <% console.log(auxiliar) %> 
+    <% for( let i = 0; i < 8; i++ ) { %>
+        <a class="linkCard" href=<%= `/product/${auxiliar [i].id}` %>>
+            <li class="card">
+                <img class="cardImg" src="<%=auxiliar [i].image %> " alt="Jack daniels">
+                <article class="cardText">
+                    <div class="descriptionCard">
+                        <h4><%= auxiliar [i].title  %></h4>
+                    </div>
+                    <div class="priceCard">
+                        <span><%= auxiliar [i].price  %> </span>
+                        <span>PUNTOS</span>
+                    </div>
+                </article>
+            </li>
+        </a>
+    <% } %>
+</ul>

@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 const indexRoutes = require('./routes/indexRoutes')
 const usersRoutes = require('./routes/usersRoutes')
 const productsRoutes = require('./routes/productsRoutes')
-
+const createError = require('http-errors');
 ///////////////////////////////////////
 
 app.set('view engine', 'ejs');
@@ -22,7 +22,7 @@ app.use('/', indexRoutes);
 app.use('/users', usersRoutes);
 app.use('/product', productsRoutes);
 
-app.use((req,res,next)=>{
+app.use('*', (req,res,next)=>{
     res.status(404).send('Ruta incorrecta');
     next();
 })
@@ -32,3 +32,5 @@ app.use((req,res,next)=>{
 app.listen(PORT,()=>{
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
+// catch 404 and forward to error handler
