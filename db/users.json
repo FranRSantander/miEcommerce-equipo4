@@ -1,0 +1,34 @@
+[
+  {
+    "email": "ckuba@santandertecnologia.com.ar",
+    "password1": "asdfasdf",
+    "password2": "asdfasdf"
+  },
+  {
+    "email": "ckuba@santandertecnologia.com.ar",
+    "password1": "qwerqwer",
+    "password2": "qwerqwer"
+  },
+  { "email": "car@fd.com", "password1": "asdfasdf", "password2": "asdfasdf" },
+  {
+    "email": "caro@asdf.com",
+    "password1": "12341234",
+    "password2": "12341234"
+  },
+  {
+    "email": "caro@asdf.com",
+    "password1": "asdfasdf",
+    "password2": "asdfasdf"
+  },
+  {
+    "email": "nuevaprueba@asdf.com",
+    "password1": "asdfasdf",
+    "password2": "asdfasdf"
+  },
+  { "email": "rr@asdf.com", "password1": "12345678", "password2": "34534556" },
+  {
+    "email": "carofkuba@gmail.com",
+    "password1": "carocaro",
+    "password2": "carocaro"
+  }
+]

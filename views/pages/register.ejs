@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="loginForm">
     <%- include("../partials/header")%>
-=======
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body class="loginForm">
-    <%- include("../partials/header")%> 
->>>>>>> Sprint-II
     <main class="formTarjeta">
       <form class="login" action="/users/register" method="post">
         <ul>
           <li><h2>¡Registrate!</h2></li>
+          <% if (locals.errors) { %> <% errors.forEach(error =>{%>
+
+          <p class="error-msg">*<%= error.msg %></p>
+
+          <%}) %> <% } %>
           <li>
-            <input class="entradita" type="email" placeholder="Tu email" />
+            <input
+              class="entradita"
+              type="email"
+              placeholder="Tu email"
+              name="email"
+              value="<%= locals.old && old.email ? old.email : ''%>"
+            />
           </li>
           <li>
             <input
               class="entradita"
               type="password"
               placeholder="Tu nueva contraseña"
+              name="password1"
+              value="<%= locals.old && old.password1 ? old.password1 : ''%>"
             />
           </li>
           <li>
@@ -35,10 +41,14 @@
               class="entradita"
               type="password"
               placeholder="Repite tu contraseña"
+              name="password2"
+              value="<%= locals.old && old.password2 ? old.password2 : ''%>"
             />
           </li>
           <li>
-            <a href="/"><button class="boton">Crear Cuenta</button></a>
+            <a href="/"
+              ><button type="submit" class="boton">Crear Cuenta</button></a
+            >
           </li>
         </ul>
       </form>
