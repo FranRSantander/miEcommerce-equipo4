@@ -1,31 +1,39 @@
+//DEPENDENCIAS
 const express = require('express');
 
 const app = express();
-let path = require('path');
+
 const PORT = process.env.PORT || 8080;
 
-///////////////////////////////////////
 const indexRoutes = require('./routes/indexRoutes')
 
 const usersRoutes = require('./routes/usersRoutes')
 
 const productsRoutes = require('./routes/productsRoutes')
-///////////////////////////////////////
 
+//CONFIGURACION
 app.set('view engine', 'ejs');
 
-app.set('views','./views');
+app.set('views','./views/pages');
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static('public'));
 
+app.use(express.json());
 
-/////////////////////////////////////
+app.use(express.urlencoded({extended:true}));
 
-app.use('/', indexRoutes)
+//RUTAS
+
+app.use('/', indexRoutes);
 
 app.use('/users', usersRoutes);
 
 app.use('/', productsRoutes);
+
+app.get('*',(req, res)=>{
+    res.render("404");
+});
+//* * para todas las rutas*/
 
 ///////////////////////////////////////
 

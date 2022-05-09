@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="loginForm">
     <%- include("../partials/header")%> 
     <main class="formTarjeta">
-        <form class="login">
+        <% if (typeof err !== "undefined") { %>
+            <h2><%= err %> </h2>
+        <% } %>
+        <% if (typeof msj !== "undefined") { %>
+            <h2><%= msj %> </h2>
+        <% } %>
+        <form action="/users/register" method="post" class="login">
             <ul>
                 <li><h2>¡Registrate!</h2></li>
-                <li><input class="entradita" type="email" placeholder="Tu email"></li>
-                <li><input class="entradita" type="password" placeholder="Tu nueva contraseña"></li>
-                <li><input class="entradita" type="password" placeholder="Repite tu contraseña"></li>
-                <li><a href="/"><button class="boton" type="submit">Crear Cuenta</button></a></li>
+                <li><input class="entradita" placeholder="Tu nombre" name="nombre" required></li>
+                <li><input class="entradita" placeholder="Tu apellido" name="apellido" required></li>
+                <li><input class="entradita" type="email" placeholder="Tu email" id="email" name="email" required></li>
+                <li><input class="entradita" type="password" placeholder="Tu nueva contraseña" id="contrasenia" name="contrasenia" required min="8"></li>
+                <li><input class="entradita" type="password" placeholder="Repite tu contraseña" id="contraseniaVericada" name="contraseniaVericada" required min="8"></li>
+                <li><a href="/"><button class="boton" type="submit" value="agregar">Crear Cuenta</button></a></li>
             </ul>
         </form>
         <div class="enlace">
