@@ -51,7 +51,7 @@ const getProduct = async (req, res)=>{
         orderByRate(products);
         const product = products.find(product => product.id == id);
         if(product === undefined){
-            res.status(501).send('El producto no existe');
+            res.status(404).render('404product');
         }
         else{
             res.render('product', {products:products, product});
