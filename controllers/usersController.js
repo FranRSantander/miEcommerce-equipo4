@@ -4,7 +4,6 @@ const arrayUsers = require("../db/users.json")
 
 let renderRegister = (req, res) => {
   res.render("register");
-  console.log(validationResult(req));
 };
 
 let registerUser = (req, res) => {
