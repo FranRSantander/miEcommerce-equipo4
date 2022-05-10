@@ -1,0 +1,20 @@
+.bodyError404{
+    background-color: #efefef;
+}
+.img404{
+    width: 250px;
+}
+.errorArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+.errorMessages{
+    font-size: 35px;
+}
+.buttonRedirect{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
