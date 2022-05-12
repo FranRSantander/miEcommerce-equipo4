@@ -1,4 +1,4 @@
-.sectionAd {
+/*.sectionAd {
   background-color: #0cb093;
   position: relative;
   z-index: -2;
@@ -61,4 +61,76 @@
   flex-direction: row;
   justify-content: center;
   gap: 16px;
+}*/
+
+.sectionAd {
+  background-color: #0cb093;
+  position: relative;
+  z-index: -2;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  padding-bottom: 24px;
+}
+.sectionAd::before {
+  content: "";
+  position: absolute;
+  background-color: #efefef;
+  top: 0%;
+  right: 0%;
+  bottom: 85%;
+  left: 0%;
+  z-index: -1;
+}
+.containerCard1 {
+  align-items: flex-end;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.246) 0%,rgba(0, 0, 0, 0.155) 35%,rgba(0, 0, 0, 0.06235997817095584) 100%),url("../../media/productCard/disneybg.jpg");
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  height: 194px;
+  width: 382px;
+}
+.containerCard2 {
+  align-items: flex-end;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.246) 0%,rgba(0, 0, 0, 0.155) 35%,rgba(0, 0, 0, 0.06235997817095584) 100%),url("../../media/productCard/hbobg.jpg");
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  height: 194px;
+  width: 382px;
+}
+.mediaAD {
+  border-radius: 8px;
+  height: 112px;
+  width: 112px;
+}
+.cardAd {
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+  text-decoration: none;
+  width: 100%;
+}
+.textCard {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 16px 8px 24px 16px;
+}
+.promoPoints{
+  display: none;
+}
+.sectionAd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+@media (min-width: 1024px){
+  .sectionAd::before {
+    content: "";
+    background-color: #efefef;
+    bottom: 90%;
+  }
 }
