@@ -3,6 +3,7 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card {
     align-content: center;
@@ -34,7 +35,7 @@
 }
 .descriptionCard {
     padding: 8px;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 700;
     border-right: 1px solid #00000040;
 }

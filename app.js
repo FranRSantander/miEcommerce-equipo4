@@ -1,40 +1,40 @@
 const express = require('express');
 
-const app = express();
+//DEPENDENCIAS
 
+const app = express();
 const PORT = process.env.PORT || 8080;
+
+///////////////////////////////////////
+
+const indexRoutes = require('./routes/indexRoutes')
+const usersRoutes = require('./routes/usersRoutes')
+const productsRoutes = require('./routes/productsRoutes')
+const createError = require('http-errors');
 ///////////////////////////////////////
 
 app.set('view engine', 'ejs');
-
-app.set('views','./views');
-
+app.set('views','./views/pages');
 app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 /////////////////////////////////////
-app.get('/',(req, res)=>{
-    res.render('pages/index');
-});
 
-app.get('/products',(req, res)=>{
-    res.render('pages/product');
-});
+app.use('/', indexRoutes);
+app.use('/users', usersRoutes);
+app.use('/product', productsRoutes);
 
-app.get('/cart',(req, res)=>{
-    res.render('pages/cart');
-});
+app.use('*', (req,res,next)=>{
+    res.status(404).render('404');
+    console.log(res.status);
+    next();
+})
 
-app.get('/checkout',(req, res)=>{
-    res.render('pages/checkout');
-});
-
-app.get('/register',(req, res)=>{
-    res.render('pages/register');
-});
-
-app.get('/login',(req, res)=>{
-    res.render('pages/login');
-});
 ///////////////////////////////////////
+
 app.listen(PORT,()=>{
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
+// catch 404 and forward to error handler

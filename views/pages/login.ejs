@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="loginForm">
 <%- include("../partials/header")%> 
     <main class="formTarjeta">
-        <div class="login">
+        <% if (typeof err !== "undefined") { %>
+            <h2><%= err %> </h2>
+        <% } %>
+        <% if (typeof msj !== "undefined") { %>
+            <h2><%= msj %> </h2>
+        <% } %>
+        <form class="login" method="post">
             <ul>
                 <li><h2>¡Hola!</h2></li>
-                <li><input class="entradita" type="text" placeholder="Tu nombre de usuario"></li>
-                <li><input class="entradita" type="password" placeholder="Tu contraseña"></li>
+                <li><input class="entradita" type="text" placeholder="Tu nombre de usuario" required name="email"></li>
+                <li><input class="entradita" type="password" placeholder="Tu contraseña" required name="pass"></li>
                 <li><a href="/"><button class="boton">Iniciar Sesión</button></a></li>
             </ul>
-        </div>
+        </form>
         <div class="enlace">
             <p>¿No tienes cuenta?<a href="register">Registrate</a></p>
         </div>

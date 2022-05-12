@@ -1,0 +1,18 @@
+<ul class="sectionCard">
+    <% for( let i = 0; i < 4; i++ ) { %>
+        <a class="linkCard" href=<%= `/product/${products [i].id}` %>>
+            <li class="card">
+                <img class="cardImg" src=<%=products [i].image %>  alt=<%= products [i].title  %>>
+                <article class="cardText">
+                    <div class="descriptionCard">
+                        <h4><%= products [i].title  %></h4>
+                    </div>
+                    <div class="priceCard">
+                        <span><%= products [i].price  %> </span>
+                        <span>PUNTOS</span>
+                    </div>
+                </article>
+            </li>
+        </a>
+    <% } %>
+</ul>
