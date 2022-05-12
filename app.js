@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8080;
 const indexRoutes = require('./routes/indexRoutes')
 const usersRoutes = require('./routes/usersRoutes')
 const productsRoutes = require('./routes/productsRoutes')
-const createError = require('http-errors');
+
 ///////////////////////////////////////
 
 app.set('view engine', 'ejs');
