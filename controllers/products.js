@@ -35,7 +35,7 @@ const getProducts = (req, res) => {
         values => {
             let mostwanted = values[0];
             let suggested = values[1];
-
+            
             res.render('index', {mostwanted, suggested});
         }
     );

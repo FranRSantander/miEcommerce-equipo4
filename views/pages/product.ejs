@@ -28,46 +28,21 @@
             
             </nav>
             <section class="main-product-box">
-
                 <div class="left-side-img-container">
-                    <figure class="image1-container">
-                        <img class="image-1"                        
-                            <% if(product.gallery[0]){%>
-                                src=<%= `${product.gallery[0]}` %>
-                            <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
-                            <% } %>
-
-                            alt=<%= `${product.title}` %>
-                        
-                        >
-                    </figure>
-                    <figure class="image2-container">
-                        <img class="image-2"
-                        
-                            <% if(product.gallery[1]){%>
-                                src=<%= `${product.gallery[1]}` %>
-                            <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
-                            <% } %>
-
-                            alt=<%= `${product.title}` %>
-                        
-                        >
-                    </figure>
-                    <figure class="image3-container">
-                        <img class="image-3"
-                        
-                            <% if(product.gallery[2]){%>
-                                src=<%= `${product.gallery[2]}` %>
-                            <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
-                            <% } %>
-
-                            alt=<%= `${product.title}` %>
-                        
-                        >
-                    </figure>
+                    <% for( let i = 0; i < 3; i++ ) { %>
+                        <figure class="main-image-container">
+                            <img class="side-image"                        
+                                <% if(product.gallery[i]){%>
+                                    src=<%= `${product.gallery[i]}` %>
+                                <% }else{ %>
+                                    src="/../../media/card/fallback-image.jpg"
+                                <% } %>
+    
+                                alt=<%= `${product.title}` %>
+                            
+                            >
+                        </figure>
+                    <% } %>
                 </div>
                 <figure class="main-picture-container">
                     <img class="main-image"
