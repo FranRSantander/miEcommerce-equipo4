@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="homeBody">
+    <%- include('../partials/header1.ejs') %>
     <div class="menuCategoriesTop">
         <%- include('../partials/categories.ejs') %> 
     </div>
@@ -24,5 +25,11 @@
             </article>
         </section>
     </main>
+    <div class="menuCategoriesBot">
+        <%- include('../partials/categories.ejs') %> 
+    </div>
+    <div class="footerContainer">
+        <%-include('../partials/footer.ejs') %>
+    </div>
 </body>
 </html>

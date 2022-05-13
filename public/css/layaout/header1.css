@@ -27,9 +27,20 @@
     letter-spacing: -0.1em;
     font-weight: 300;
   }
-  .input-buscador {
+  /*.input-buscador {
     height: 32px;
     width: 70vw;
+    top: calc(50% - 32px / 2);
+    padding: 8px 16px;
+  
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 16px;
+  }*/
+  .input-buscador {
+    height: 32px;
+    width: 45vw;
     top: calc(50% - 32px / 2);
     padding: 8px 16px;
   
@@ -80,4 +91,16 @@
   .boton-carrito:hover {
     background: rgba(12, 176, 147, 1);
     border: 2px solid rgba(12, 176, 147, 1);
+  }
+  .userLogin,
+  .desktop{
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .desktop{
+      display: inline;
+    }
+    .input-buscador{
+      width: 60vw;
+    }
   }
