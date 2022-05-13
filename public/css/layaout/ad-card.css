@@ -133,4 +133,21 @@
     background-color: #efefef;
     bottom: 90%;
   }
+  .sectionAd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+  .containerCard1 {
+    height: 256px;
+    width: 504px;
+  }
+  .containerCard2 {
+    height: 256px;
+    width: 504px;
+  }
+  .promoPoints{
+    display: contents;
+  }
 }

@@ -12,5 +12,17 @@
         <%- include('../partials/categories.ejs') %> 
     </div>
     <%- include('../partials/adCard.ejs') %>
+    <main class="containerMain">
+        <section class="sectionInteres">
+            <h3 class="titleSectionProducts">Te puede interesar</h3>
+            <%- include('../partials/suggestedCard.ejs') %>
+        </section>
+        <section class="sectionInteres">
+            <p class="titleSectionProducts">Los más pedidos</p>
+            <article class="blockProcuts">
+                <%- include('../partials/mostWanted.ejs') %>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
