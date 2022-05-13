@@ -1,4 +1,4 @@
-/*Estilo de las tarjetas de productos*/
+/*Estilo de las tarjetas de productos
 .sectionCard {
     display: flex;
     gap: 16px;
@@ -45,6 +45,60 @@
     font-weight: 700;
     padding-left: 8px;
     padding-top: 8px;
+}
+.priceCard span:nth-child(2) {
+    font-size: 8px;
+    font-weight: 300;
+}
+*/
+.sectionCard {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    height: 144px;
+    padding: 8px;
+    width: 382px;
+    transition: all 0.2s ease-in-out;
+}
+.cardImg {
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+    padding-right: 16px;
+}
+.card:hover{
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.274);
+}
+.linkCard {
+    text-decoration: none;
+    color: black;
+}
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descriptionCard {
+    font-size: 10px;
+    font-weight: 700;
+}
+.priceCard {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
 }
 .priceCard span:nth-child(2) {
     font-size: 8px;
