@@ -10,6 +10,7 @@
 @import url("./pages/404.css");
 @import url("./pages/404product.css");
 @import url("./pages/cart.css");
+@import url("./pages/menuPrincipal.css");
 /*Imports de Layouts*/
 @import url("./layaout/product-card.css");
 @import url("./layaout/ad-card.css");
