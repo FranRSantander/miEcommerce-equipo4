@@ -6,21 +6,31 @@ let renderRegister = (req, res) => {
   res.render("register");
 };
 
+let renderLogin = (req, res) => {
+  res.render("login");
+}
+
+////////
+
+function saveUser(reqBody){   //debe recibir el objeto req.body
+  arrayUsers.push(reqBody);
+  const jsonArrayUsers = JSON.stringify(arrayUsers);
+  fs.writeFileSync("./db/users.json", jsonArrayUsers);    //lo guarda en users.json
+}
+
+
+
 let registerUser = (req, res) => {
   const errors = validationResult(req);
-  if (!errors.isEmpty()) {
+
+  if (!errors.isEmpty()) {                   //si hay errores, los manda a la pantalla
     res.render("register", { errors: errors.array(), old: req.body });
   } else {
-    arrayUsers.push(req.body);
-    const jsonArrayUsers = JSON.stringify(arrayUsers);
-    fs.writeFileSync("./db/users.json", jsonArrayUsers);
+    saveUser(req.body);
     res.send("Registro exitoso");
   }
 };
 
-let renderLogin = (req, res) => {
-  res.render("login");
-}
 
 let login = (req, res) => {
   const {email , pass} = req.body;
