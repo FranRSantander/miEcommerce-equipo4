@@ -24,6 +24,23 @@
     margin-bottom: 32px;
     margin-top: 32px;
 }
-.blockProcuts {
+.blockProducts {
     padding-bottom: 16px;
 }
+.overlay{
+    height: 100%;
+    width: 0;
+    position:absolute;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    background-color: aquamarine;
+    backdrop-filter: blur(4px);
+}
+.show-menu{
+    display: block;
+}
+.hide-menu{
+    display:none;
+}
+
