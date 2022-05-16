@@ -87,8 +87,7 @@
     height: 32px;
     border-radius: 50%;
 }
-.botones-gral:hover,
-.boton-carrito:hover {
+.botones-gral:hover {
     background: rgba(12, 176, 147, 1);
     border: 2px solid rgba(12, 176, 147, 1);
 }
@@ -97,10 +96,10 @@
     display: none;
 }
 @media (min-width: 768px) {
-.desktop{
-    display: inline;
-}
-.input-buscador{
-    width: 60vw;
-}
+    .desktop{
+        display: inline;
+    }
+    .input-buscador{
+        width: 60vw;
+    }
 }
