@@ -121,6 +121,10 @@
     transition: ease-in-out 300ms all;
     width: 78px;
 }
+.btn-quitar:hover {
+    background: rgba(12, 176, 147, 1);
+    border: 2px solid rgba(12, 176, 147, 1);
+}
 @media (min-width: 425px){
     .caja-article2 {
         width: 325px;
@@ -148,4 +152,4 @@
     .btn-quitar {
         width: 110px;
     }
-  }
+}
