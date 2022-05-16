@@ -1,14 +1,14 @@
 <ul class="sectionCard">
-    <% for( let i = 0; i < 8; i++ ) { %>
-        <a class="linkCard" href=<%= `/product/${auxiliar [i].id}` %>>
+    <% for( let i = 0; i < mostwanted.length; i++ ) { %>
+        <a class="linkCard" href=<%= `/product/${mostwanted [i]._id}` %>>
             <li class="card">
-                <img class="cardImg" src=<%=auxiliar [i].image %> alt=<%= auxiliar[i].title%>>
+                <img class="cardImg" src=<%=mostwanted [i].image %> alt=<%= mostwanted[i].title%>>
                 <article class="cardText">
                     <div class="descriptionCard">
-                        <h4><%= auxiliar [i].title  %></h4>
+                        <h4><%= mostwanted [i].title  %></h4>
                     </div>
                     <div class="priceCard">
-                        <span><%= auxiliar [i].price  %> </span>
+                        <span><%= mostwanted [i].price  %> </span>
                         <span>PUNTOS</span>
                     </div>
                 </article>

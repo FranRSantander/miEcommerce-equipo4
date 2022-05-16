@@ -11,47 +11,58 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     width: 100vw;
     padding: 0px 16px;
-  }
-  .logoLink {
+}
+.logoLink {
     text-decoration: none;
-  }
-  .logo1 {
+}
+.logo1 {
     font-size: 24px;
     font-weight: 800;
     color: #0cb093;
     letter-spacing: -0.1em;
-  }
-  .logo2 {
+}
+.logo2 {
     font-size: 24px;
     color: #0cb093;
     letter-spacing: -0.1em;
     font-weight: 300;
-  }
-  .input-buscador {
+}
+/*.input-buscador {
     height: 32px;
     width: 70vw;
     top: calc(50% - 32px / 2);
     padding: 8px 16px;
-  
+
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     border-radius: 16px;
-  }
-  .buscador {
+}*/
+.input-buscador {
+    height: 32px;
+    width: 45vw;
+    top: calc(50% - 32px / 2);
+    padding: 8px 16px;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.buscador {
     position: relative;
-  }
-  .img-lupa {
+}
+.img-lupa {
     position: absolute;
     right: 10px;
     top: 4px;
     color: rgba(0, 0, 0, 0.5);
-  }
-  .contenedor-botones-header {
+}
+.contenedor-botones-header {
     display: flex;
     gap: 8px;
-  }
-  .botones-gral {
+}
+.botones-gral {
     align-items: center;
     background: rgba(73, 79, 81, 1);
     border-radius: 16px;
@@ -64,8 +75,8 @@
     padding: 8px 16px;
     transition: ease-in-out 300ms all;
     width: 110px;
-  }
-  .boton-carrito {
+}
+.boton-carrito {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +86,20 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-  }
-  .botones-gral:hover,
-  .boton-carrito:hover {
+}
+.botones-gral:hover {
     background: rgba(12, 176, 147, 1);
     border: 2px solid rgba(12, 176, 147, 1);
-  }
+}
+.userLogin,
+.desktop{
+    display: none;
+}
+@media (min-width: 768px) {
+    .desktop{
+        display: inline;
+    }
+    .input-buscador{
+        width: 60vw;
+    }
+}
