@@ -99,7 +99,73 @@
   bottom: 0px;
   width: 100%;
 }
-.error-msg {
-  color: rgb(146, 7, 7);
-  font-size: 10px;
+.err{
+  position: absolute;
+  display: flex;
+  flex-wrap:unset;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 440px;
+  height: 95px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  top:22%;
+  right: 50%;
+  bottom: 50%;
+  left: 36%;
+  z-index: 100;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.msj{
+  position: absolute;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 440px;
+  height: 90px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  top:22%;
+  right: 50%;
+  bottom: 50%;
+  left: 36%;
+  z-index: 100;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.errButtom{
+  background-color: rgba(12, 176, 147, 1);
+  border-radius: 16px;
+  padding: 2px 2px 2px 2px;
+}
+.msjButtom{
+  background-color: rgba(12, 176, 147, 1);
+  border-radius: 16px;
+  padding: 2px 2px 2px 2px;
+}
+.err a {
+  background-color: rgba(12, 176, 147, 1);
+  border-radius: 16px;
+  padding: 1px 1px 1px 1px;
+  color: black;
+  text-decoration: none;
+  bottom: 2px;
+  border: black solid 2px;
+}
+.msj{
+  border: black solid 1px;
+  background-color: rgba(12, 176, 147, 1);
+  border-radius: 16px;
+  padding: 1px 1px 1px 1px;
+  color: black;
 }
