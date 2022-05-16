@@ -23,12 +23,18 @@ let renderLogin = (req, res) => {
 }
 
 let login = (req, res) => {
-  const {email , pass} = req.body;
+  const {email , password1} = req.body;
   const userBuscado = arrayUsers.find((user)=>{
     return user.email === email
   });
+  const passBuscado = arrayUsers.find((user)=>{
+    return user.password1 === password1
+  });
   if(userBuscado===undefined){
     res.render("login", {err:"Usuario no Existente"}) 
+  }
+  if(passBuscado===undefined){
+    res.render("login", {err:"Contraseña erronea"}) 
   }
   res.redirect("/");
 
