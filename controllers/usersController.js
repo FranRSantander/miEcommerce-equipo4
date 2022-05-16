@@ -1,6 +1,8 @@
 const fs = require("fs");
 const { validationResult } = require("express-validator");
 const arrayUsers = require("../db/users.json")
+//let sessionInit = document.querySelector("boton");
+//sessionInit.disabled = true;
 
 let renderRegister = (req, res) => {
   res.render("register");
@@ -37,6 +39,7 @@ let login = (req, res) => {
   if(passBuscado===undefined){
     res.render("login", {err:"Contraseña erronea"}) 
   }
+  
   res.redirect("/");
 
 }
