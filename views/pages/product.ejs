@@ -38,8 +38,7 @@
                             <% } %>
 
                             alt=<%= `${product.title}` %>
-
-                        onclick="cambiarImgProducto(this)">
+                            >
                     </figure>
                     <% for( let i = 0; i < 3; i++ ) { %>
                     <figure class="main-image-container">
@@ -51,13 +50,12 @@
                             <% } %>
 
                             alt=<%= `${product.title}` %>
-
-                        onclick="cambiarImgProducto(this)">
+                            >
                     </figure>
                     <% } %>
                 </div>
                 <figure class="main-picture-container">
-                    <img id="mainImg" class="main-image"
+                    <img class="main-image"
 
                         <% if(product.image){%>
                         src=<%= `${product.image}` %>
