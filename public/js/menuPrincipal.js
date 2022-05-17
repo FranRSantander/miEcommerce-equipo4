@@ -1,10 +1,33 @@
-window.onload = function(){
-    menu.style.left = "5000%"
-    let menu = document.querySelector('.menuUsuario');
-    let boton = document.querySelector(".botonUsuario")
+window.addEventListener("load", ()=>{
 
-    logo.addEventListener("click", function(){
-        boton.classList.toggle(".menuUsuario");
-    })
+let iniciarSesionBoton = document.querySelector("#boton-user");
+let menuElement = document.querySelector("#menu-perfil");
+//click en boton de Perfil, aparece menú
 
-}
+iniciarSesionBoton.addEventListener("click", (e)=>{
+    e.preventDefault();
+    if(menuElement.classList.contains("hide")){
+        menuElement.classList.add("show"); 
+        menuElement.classList.remove("hide"); 
+    } /* else{
+        menuElement.classList.add("hide"); 
+        menuElement.classList.remove("show");
+    }   */
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+})

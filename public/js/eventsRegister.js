@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-
     const registerForm = document.querySelector(".login");
     const inputEmail = document.querySelector(".entradita");
     const inputPassword = document.querySelector("#password1");
@@ -12,7 +11,6 @@ window.addEventListener("load", function(){
 
     inputEmail.addEventListener("input", ()=>{
       let inputValue = inputEmail.value;
-    
        if(inputValue === ""){
             clearErrorList();
             validate(errorEmpty);
@@ -26,7 +24,6 @@ window.addEventListener("load", function(){
     })
     inputPassword.addEventListener("input", ()=>{
         let inputValue = inputPassword.value;
-
         if(inputValue === ""){
             clearErrorList();
             validate(errorEmpty);
@@ -40,7 +37,6 @@ window.addEventListener("load", function(){
     })
     inputPassword2.addEventListener("input", ()=>{
         let inputValue = inputPassword2.value;
-
         if(inputValue === ""){
             clearErrorList();
             validate(errorEmpty);
@@ -57,26 +53,13 @@ window.addEventListener("load", function(){
             return true;
         }
     }
-    inputPassword2.addEventListener("blur", ()=>{
-        if(listUl.innerHTML === "" && checkFieldsComplete()){
-            let buttonCrearCuenta = document.querySelector(".boton");
-            buttonCrearCuenta.style.color = "red";
-        }
-    }) 
+
     //deshabilitar botón si hay error o si hay algun campo vacio
     registerForm.addEventListener("submit", (e)=>{
         if(listUl.innerHTML.length > 0 || !checkFieldsComplete()){
             e.preventDefault();
         }
       })
-
-
- //////////////////////////////
-
-
-
-
-
 })
 
 
