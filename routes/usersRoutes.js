@@ -4,12 +4,13 @@ const {validationsLogin, validationsRegister} = require("../middlewares/validati
 
 // Register & Login
 router.get("/register", usersController.renderRegister);
-
-router.post("/register", validationsRegister, usersController.registerUser);
-
 router.get("/login", usersController.renderLogin);
 
+router.post("/register", validationsRegister,  usersController.registerUser);
 router.post("/login", validationsLogin, usersController.login);
+
+
+
 
 router.get("/checkout", (req, res) => {
   res.render("checkout");
