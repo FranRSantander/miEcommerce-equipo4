@@ -28,20 +28,10 @@
 .blockProducts {
     padding-bottom: 16px;
 }
-.overlay{
-    height: 100%;
-    width: 0;
-    position:absolute;
-    z-index: 15;
-    left: 0;
-    top: 0;
-    background-color: aquamarine;
-    backdrop-filter: blur(4px);
+/*DARK MODE*/
+body.dark.homeBody{
+    background-color: #222222;
 }
-.show-menu{
-    display: block;
+body.dark .titleSectionProducts {
+    color: white;
 }
-.hide-menu{
-    display:none;
-}
-

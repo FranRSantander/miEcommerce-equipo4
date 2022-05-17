@@ -127,6 +127,10 @@
   align-items: center;
   gap: 11px;
 }
+/*DARK MODE*/
+body.dark .sectionAd::before{
+  background-color: #222222;
+}
 @media (min-width: 1024px){
   .sectionAd::before {
     content: "";

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="product-body">
     <%- include('../partials/header1.ejs') %>
@@ -15,8 +16,6 @@
                 <div>
                     <a class="anchor-return" href="/"><img src="/images/flecha_return.svg" alt="return to list">Volver al listado</a>
                 </div>
-
-
                 <div class="nav-bar">
                     <ul class="navigation">
                         <li><a class="nav-category" href="/">
@@ -24,12 +23,12 @@
                         Alimentos</a></li>
                     </ul>
                 </div>
-
+                <%- include('../partials/switch.ejs') %> 
             </nav>
             <section class="main-product-box">
                 <div class="left-side-img-container">
                     <figure class="main-image-container">
-                        <img class="side-image"                        
+                        <img class="side-image galleryImg"                        
                             <% if(product.image){%>
                             src=<%= `${product.image}` %>
                             <% }else{ %>
@@ -41,7 +40,7 @@
                     </figure>
                     <% for( let i = 0; i < 3; i++ ) { %>
                     <figure class="main-image-container">
-                        <img class="side-image"                        
+                        <img class="side-image galleryImg"                        
                             <% if(product.gallery[i]){%>
                             src=<%= `${product.gallery[i]}` %>
                             <% }else{ %>
@@ -54,7 +53,7 @@
                     <% } %>
                 </div>
                 <figure class="main-picture-container">
-                    <img class="main-image"
+                    <img class="main-image bigImg"
 
                         <% if(product.image){%>
                         src=<%= `${product.image}` %>
@@ -66,7 +65,7 @@
                     >
                 </figure>
                 <div class="right-description-container">
-                    <h2 class="product-title"><%= `${product.title}` %><h2>
+                    <h2 class="product-title"><%= `${product.title}` %></h2>
                     <p class="points"><%= `${product.price}` %></p><p class="points-text">PUNTOS</p>
                     <input class= "add-cart-button" type="button" value="Agregar al Carrito">
                     <div class="text-description-container">
@@ -76,7 +75,6 @@
             </section>
         </div>
     </main>
-
     <section class="suggestions-section-wide">
         <div class="suggestions-section-tight">
             <h3 class="titleSectionProducts">Te puede interesar</h3>
@@ -91,11 +89,9 @@
     <div class="footerContainer">
         <%-include('../partials/footer.ejs') %>
     </div>
-<<<<<<< HEAD
-=======
 
     <script src="/js/products.js"></script>
-
->>>>>>> 8ccbdfbee91af0faad9216cb3f2c32b349c237fc
+    <script src="../../js/product.js"></script>
+>>>>>>> Sprint3
 </body>
 </html>
