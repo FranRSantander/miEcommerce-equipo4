@@ -28,28 +28,6 @@
 .blockProducts {
     padding-bottom: 16px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.overlay{
-    height: 100%;
-    width: 0;
-    position:absolute;
-    z-index: 15;
-    left: 0;
-    top: 0;
-    background-color: aquamarine;
-    backdrop-filter: blur(4px);
-}
-.show-menu{
-    display: block;
-}
-.hide-menu{
-    display:none;
-}
-
-=======
->>>>>>> cc9534733499541defc655c997ce50a9362f4f44
 /*DARK MODE*/
 body.dark.homeBody{
     background-color: #222222;
@@ -57,7 +35,3 @@ body.dark.homeBody{
 body.dark .titleSectionProducts {
     color: white;
 }
-<<<<<<< HEAD
-=======
->>>>>>> f9e8fae54b3d0771399e4b781e2d7f929358a54c
->>>>>>> cc9534733499541defc655c997ce50a9362f4f44

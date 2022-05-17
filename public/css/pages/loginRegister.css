@@ -11,10 +11,6 @@
   background-color: rgba(12, 176, 147, 1);
   height: 100vh;
   position: relative;
-<<<<<<< HEAD
-=======
->>>>>>> f9e8fae54b3d0771399e4b781e2d7f929358a54c
->>>>>>> cc9534733499541defc655c997ce50a9362f4f44
 }
 .loginForm::before {
   content: "";
