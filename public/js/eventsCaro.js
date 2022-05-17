@@ -1,17 +1,15 @@
-
-
 window.addEventListener("load", function(){
 
     const registerForm = document.querySelector(".login");
     const inputEmail = document.querySelector(".entradita");
     const inputPassword = document.querySelector("#password1");
     const inputPassword2 = document.querySelector("#password2");
+    let listUl = document.querySelector(".list-errors");
     
-
     const errorEmpty = "Debe ingresar un dato";
     const errorLength = "Debe tener por lo menos 8 caracteres";
     const errorIsEmail = "Debe ser un email";
-    
+
     inputEmail.addEventListener("input", ()=>{
       let inputValue = inputEmail.value;
     
@@ -26,11 +24,6 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
-
-    inputEmail.addEventListener("blur", function(){
-        document.querySelector(".list-errors").innerHTML = "";
-    })
-
     inputPassword.addEventListener("input", ()=>{
         let inputValue = inputPassword.value;
 
@@ -45,7 +38,6 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
-
     inputPassword2.addEventListener("input", ()=>{
         let inputValue = inputPassword2.value;
 
@@ -60,6 +52,29 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
+    function checkFieldsComplete(){
+        if ((inputEmail.value && inputPassword.value && inputPassword2.value)){
+            return true;
+        }
+    }
+    inputPassword2.addEventListener("blur", ()=>{
+        if(listUl.innerHTML === "" && checkFieldsComplete()){
+            let buttonCrearCuenta = document.querySelector(".boton");
+            buttonCrearCuenta.style.color = "red";
+        }
+    }) 
+    //deshabilitar botón si hay error o si hay algun campo vacio
+    registerForm.addEventListener("submit", (e)=>{
+        if(listUl.innerHTML.length > 0 || !checkFieldsComplete()){
+            e.preventDefault();
+        }
+      })
+
+
+ //////////////////////////////
+
+
+
 
 
 })
@@ -70,29 +85,5 @@ window.addEventListener("load", function(){
 
 
 
-/*        registerForm.addEventListener("submit", (e)=>{
-          if(!inputEmail.validity.valid){
-            showError();
-            e.preventDefault();*!/
-    }
-)*/
 
-
-
-
-
-/*
-
-let showMenu = (e)=>{
-    e.preventDefault();
-    let menuElement = document.querySelector("#menu-prueba");
-    menuElement.classList.remove("hide-menu");
-}
-
-//1. que se abra el menú al hacer click en el Perfil:
-let iniciarSesionBoton = document.querySelector("#boton-user");
-iniciarSesionBoton.addEventListener("click", showMenu);
-
-//2. que cuando haga click afera, se vaya:
-window.addEventListener("click", ()=>{
-    let overlayDiv = querySelector(".overlay");*/
+       
