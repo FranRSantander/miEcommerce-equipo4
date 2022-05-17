@@ -9,9 +9,27 @@ window.addEventListener("load", function(){
     const errorLength = "Debe tener por lo menos 8 caracteres";
     const errorIsEmail = "Debe ser un email";
 
+
+    //desactivacion del boton y su clase con hover
     let botonLogin = document.querySelector(".boton");
     botonLogin.disabled = true;
     botonLogin.classList.remove("boton")
+
+    //obtengo los datos del input 1 y 2 para poder validar el boton y activarlo
+    document.getElementById("entradita1").addEventListener("change", function(e) {
+        let input1 = e.target.value
+            document.getElementById("entradita2").addEventListener("change", function(e) {
+            let input2 = e.target.value
+            if(input1 !=="" && input2 !==""){
+                botonLogin.disabled = true;
+                botonLogin.classList.add("boton")
+            }
+
+    })
+    })
+
+
+
     
     inputEmail.addEventListener("input", ()=>{
       let inputValue = inputEmail.value;
@@ -44,7 +62,6 @@ window.addEventListener("load", function(){
                 validate(errorLength);
             }else{
                 clearErrorList();
-
             }}
     })
     inputPassword2.addEventListener("input", ()=>{
@@ -62,34 +79,3 @@ window.addEventListener("load", function(){
             }}
     })
 })
-
-
-
-
-
-/*        registerForm.addEventListener("submit", (e)=>{
-          if(!inputEmail.validity.valid){
-            showError();
-            e.preventDefault();*!/
-    }
-)*/
-
-
-
-
-
-/*
-
-let showMenu = (e)=>{
-    e.preventDefault();
-    let menuElement = document.querySelector("#menu-prueba");
-    menuElement.classList.remove("hide-menu");
-}
-
-//1. que se abra el menú al hacer click en el Perfil:
-let iniciarSesionBoton = document.querySelector("#boton-user");
-iniciarSesionBoton.addEventListener("click", showMenu);
-
-//2. que cuando haga click afera, se vaya:
-window.addEventListener("click", ()=>{
-    let overlayDiv = querySelector(".overlay");*/
