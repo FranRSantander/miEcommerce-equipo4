@@ -179,7 +179,7 @@
   bottom: 2px;
   border: black solid 2px;
   margin: 4px;
-  height: 10px;
+  height: auto;
 }
 .msj{
   border: black solid 1px;

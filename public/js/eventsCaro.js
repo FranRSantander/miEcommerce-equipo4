@@ -47,7 +47,6 @@ window.addEventListener("load", function(){
 
             }}
     })
-    /*
     inputPassword2.addEventListener("input", ()=>{
         let inputValue = inputPassword2.value;
 
@@ -62,20 +61,6 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
-    */
-    inputPassword2.addEventListener("input", ()=>{
-        function checkFieldsComplete(){
-            if((inputEmail.value && inputPassword.value && inputPassword2.value)){
-                return true;
-            }
-        } 
-        let listUl =this.document.querySelector(".list-errors")
-        if(listUl.innerHTML === "" && checkFieldsComplete()){
-            let buttonCrearCuenta = this.document.querySelector(".boton");
-            buttonCrearCuenta.getElementsByClassName.color="red"
-        }
-    }
-    )
 })
 
 
