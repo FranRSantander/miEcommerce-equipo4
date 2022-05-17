@@ -2,8 +2,9 @@ let mainImg = document.querySelector(".bigImg");
 
 let images = document.querySelectorAll(".galleryImg");
 
-images.forEach(img =>{
+for (let i = 0; i < images.length; i++) {
+    const img = images[i];
     img.addEventListener('click', ()=>{
-        mainImg.src = images.src
+        mainImg.src = img.src
     })
-})
+}
