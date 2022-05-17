@@ -23,10 +23,12 @@
     font-weight: 400px;
     margin-bottom: 32px;
     margin-top: 32px;
+    padding-left: 16px;
 }
 .blockProducts {
     padding-bottom: 16px;
 }
+<<<<<<< HEAD
 .overlay{
     height: 100%;
     width: 0;
@@ -44,3 +46,12 @@
     display:none;
 }
 
+=======
+/*DARK MODE*/
+body.dark.homeBody{
+    background-color: #222222;
+}
+body.dark .titleSectionProducts {
+    color: white;
+}
+>>>>>>> f9e8fae54b3d0771399e4b781e2d7f929358a54c

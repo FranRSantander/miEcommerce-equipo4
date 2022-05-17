@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="product-body">
     <%- include('../partials/header1.ejs') %>
@@ -18,68 +19,53 @@
                 <div class="nav-bar">
                     <ul class="navigation">
                         <li><a class="nav-category" href="/">
-                            <img src="/images/flecha_der.svg" alt="right arrow">
-                            Alimentos</a></li>
+                        <img src="/images/flecha_der.svg" alt="right arrow">
+                        Alimentos</a></li>
                     </ul>
                 </div>
-            
+                <%- include('../partials/switch.ejs') %> 
             </nav>
             <section class="main-product-box">
-
                 <div class="left-side-img-container">
-                    <figure class="image1-container">
-                        <img class="image-1"                        
+                    <figure class="main-image-container">
+                        <img class="side-image galleryImg"                        
                             <% if(product.image){%>
-                                src=<%= `${product.image}` %>
+                            src=<%= `${product.image}` %>
                             <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
+                            src="/../../media/card/fallback-image.jpg"
                             <% } %>
 
                             alt=<%= `${product.title}` %>
-                        
-                        >
+                            >
                     </figure>
-                    <figure class="image2-container">
-                        <img class="image-2"
-                        
-                            <% if(product.image){%>
-                                src=<%= `${product.image}` %>
+                    <% for( let i = 0; i < 3; i++ ) { %>
+                    <figure class="main-image-container">
+                        <img class="side-image galleryImg"                        
+                            <% if(product.gallery[i]){%>
+                            src=<%= `${product.gallery[i]}` %>
                             <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
+                            src="/../../media/card/fallback-image.jpg"
                             <% } %>
 
                             alt=<%= `${product.title}` %>
-                        
-                        >
+                            >
                     </figure>
-                    <figure class="image3-container">
-                        <img class="image-3"
-                        
-                            <% if(product.image){%>
-                                src=<%= `${product.image}` %>
-                            <% }else{ %>
-                                src="/../../media/card/fallback-image.jpg"
-                            <% } %>
-
-                            alt=<%= `${product.title}` %>
-                        
-                        >
-                    </figure>
+                    <% } %>
                 </div>
                 <figure class="main-picture-container">
-                    <img class="main-image"
+                    <img class="main-image bigImg"
 
                         <% if(product.image){%>
-                            src=<%= `${product.image}` %>
+                        src=<%= `${product.image}` %>
                         <% }else{ %>
-                            src="/../../media/card/fallback-image.jpg"
+                        src="/../../media/card/fallback-image.jpg"
                         <% } %>
 
                         alt=<%= `${product.title}` %>
                     >
                 </figure>
                 <div class="right-description-container">
-                    <h2 class="product-title"><%= `${product.title}` %><h2>
+                    <h2 class="product-title"><%= `${product.title}` %></h2>
                     <p class="points"><%= `${product.price}` %></p><p class="points-text">PUNTOS</p>
                     <input class= "add-cart-button" type="button" value="Agregar al Carrito">
                     <div class="text-description-container">
@@ -89,13 +75,12 @@
             </section>
         </div>
     </main>
-
-  <section class="suggestions-section-wide">
-    <div class="suggestions-section-tight">
-        <h3 class="titleSectionProducts">Te puede interesar</h3>
-        <%- include('../partials/suggestedCard.ejs') %>
-    </div>
-  </section>
+    <section class="suggestions-section-wide">
+        <div class="suggestions-section-tight">
+            <h3 class="titleSectionProducts">Te puede interesar</h3>
+            <%- include('../partials/suggestedCard.ejs') %>
+        </div>
+    </section>
 
     <div class="menuCategoriesBot">
         <%- include('../partials/categories.ejs') %> 
@@ -104,5 +89,9 @@
     <div class="footerContainer">
         <%-include('../partials/footer.ejs') %>
     </div>
+<<<<<<< HEAD
+=======
+    <script src="../../js/product.js"></script>
+>>>>>>> f9e8fae54b3d0771399e4b781e2d7f929358a54c
 </body>
 </html>

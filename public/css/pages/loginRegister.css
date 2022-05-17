@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-.loginForm {
+/* .loginForm {
   margin: 0;
   background-color: rgba(12, 176, 147, 1);
   height: 100vh;
@@ -124,6 +124,7 @@
 .errors .list-errors li{
   color: rgb(146, 7, 7);
   font-size: 10px;
+<<<<<<< HEAD
   padding: 2px;
 }
 .red-border{
@@ -187,4 +188,129 @@
   border-radius: 16px;
   padding: 1px 1px 1px 1px;
   color: black;
+=======
+} */
+.loginForm {
+  margin: 0;
+  background-color: rgba(12, 176, 147, 1);
+  height: 100vh;
+  position: relative;
+>>>>>>> f9e8fae54b3d0771399e4b781e2d7f929358a54c
+}
+.loginForm::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  background-color: #efefef;
+}
+.formTarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 96px;
+}
+.login {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 320px;
+  height: auto;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.login h2 {
+  font-weight: normal;
+}
+.login li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: large;
+}
+.entradita {
+  width: 265px;
+  height: 32px;
+  left: 512px;
+  top: 232px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 5%;
+}
+.boton {
+  width: 265px;
+  height: 32px;
+  left: 512px;
+  top: 232px;
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(73, 79, 81, 1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.boton:hover {
+  background-color: rgba(12, 176, 147, 1);
+}
+.enlace {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 1%;
+  margin-top: 16px;
+}
+.footerContainer-1 {
+  border-top: 1px solid #cccccc;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.error-msg {
+  color: rgb(146, 7, 7);
+  font-size: 10px;
+}
+/*DARK MODE*/
+body.dark.loginForm::before {
+  background-color: #222222;
+}
+body.dark .login {
+  background-color: #494F51;;
+}
+body.dark .login h2 {
+  color: white;
+}
+body.dark .entradita {
+  background-color: #494F51;
+}
+body.dark .boton{
+  background-color: #222222;
+}
+body.dark .enlace{
+  color: white;
+}
+
+@media (min-width: 1024px){
+  .formTarjeta {
+    padding-top: 10%;
+  }
 }
