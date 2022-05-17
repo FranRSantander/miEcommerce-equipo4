@@ -1,16 +1,17 @@
 
-
 window.addEventListener("load", function(){
 
     const registerForm = document.querySelector(".login");
-    const inputEmail = document.querySelector(".entradita");
-    const inputPassword = document.querySelector("#password1");
+    const inputEmail = document.querySelector(".entradita");//" "
+    const inputPassword = document.querySelector("#password1");//" "
     const inputPassword2 = document.querySelector("#password2");
-    
-
     const errorEmpty = "Debe ingresar un dato";
     const errorLength = "Debe tener por lo menos 8 caracteres";
     const errorIsEmail = "Debe ser un email";
+
+    let botonLogin = document.querySelector(".boton");
+    botonLogin.disabled = true;
+    botonLogin.classList.remove("boton")
     
     inputEmail.addEventListener("input", ()=>{
       let inputValue = inputEmail.value;
@@ -43,9 +44,10 @@ window.addEventListener("load", function(){
                 validate(errorLength);
             }else{
                 clearErrorList();
+
             }}
     })
-
+    /*
     inputPassword2.addEventListener("input", ()=>{
         let inputValue = inputPassword2.value;
 
@@ -60,11 +62,21 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
-
-
+    */
+    inputPassword2.addEventListener("input", ()=>{
+        function checkFieldsComplete(){
+            if((inputEmail.value && inputPassword.value && inputPassword2.value)){
+                return true;
+            }
+        } 
+        let listUl =this.document.querySelector(".list-errors")
+        if(listUl.innerHTML === "" && checkFieldsComplete()){
+            let buttonCrearCuenta = this.document.querySelector(".boton");
+            buttonCrearCuenta.getElementsByClassName.color="red"
+        }
+    }
+    )
 })
-
-
 
 
 

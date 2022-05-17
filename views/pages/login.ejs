@@ -19,10 +19,14 @@
         <form class="login" method="post">
             <ul>
                 <li><h2>¡Hola!</h2></li>
-                <li><input class="entradita" id="entradita" type="text" placeholder="Tu nombre de usuario"></li>
+                <li><input class="entradita" id="entradita1" type="text" placeholder="Tu nombre de usuario"></li>
                 <li><input class="entradita" id="entradita2" type="password" placeholder="Tu contraseña"></li>
                 <li><a href="/"><button class="boton">Iniciar Sesión</button></a></li>
             </ul>
+            <span class="errors">
+                <ul class="list-errors">
+                </ul>
+              </span>
         </form>
         <div class="enlace">
             <p>¿No tienes cuenta?<a href="register">Registrate</a></p>
@@ -32,5 +36,8 @@
         <%-include('../partials/footer.ejs') %>
     </div> 
     <script src="/js/activadoBotonLogin.js"></script>
+    <script src="/js/eventsCaro.js"></script>
+    <script src="/js/utils.Validaciones.js"></script>
+
 </body>
 </html>
