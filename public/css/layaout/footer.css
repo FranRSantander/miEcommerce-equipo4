@@ -62,7 +62,6 @@
 } */
 .footer {
   background-color: #efefef;
-  max-width: 1024px;
   margin-left: 128px;
   margin-right: 128px;
   color: #999999;
@@ -73,6 +72,8 @@
   backdrop-filter: blur(4px);
   font-size: 12px;
   text-align: center;
+  width: 100vw;
+  max-width: 1024px;
 }
 .social-networks {
   height: 20px;
@@ -130,6 +131,11 @@
   order: 1;
   padding: 8px;
 }
+/*DARK MODE*/
+body.dark .footer{
+  background-color: #222222;
+}
+
 @media (min-width: 1024px){
   .footer{
     flex-direction: row;

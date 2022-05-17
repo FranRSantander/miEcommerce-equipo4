@@ -103,6 +103,13 @@
     font-size: 8px;
     font-weight: 300;
 }
+/*DARK MODE*/
+body.dark .card{
+    background-color: #494F51;
+}
+body.dark .linkCard{
+    color: white;
+}
 
 @media (min-width: 1024px){
     .card {
@@ -121,5 +128,9 @@
     .descriptionCard {
         padding: 8px;
         border-right: 1px solid #00000040;
+    }
+    body.dark .descriptionCard {
+        
+        border-color: white;
     }
 }

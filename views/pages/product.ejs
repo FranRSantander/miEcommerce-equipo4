@@ -30,7 +30,7 @@
             <section class="main-product-box">
                 <div class="left-side-img-container">
                     <figure class="main-image-container">
-                        <img class="side-image"                        
+                        <img class="side-image bigImg"                        
                             <% if(product.image){%>
                             src=<%= `${product.image}` %>
                             <% }else{ %>
@@ -42,7 +42,7 @@
                     </figure>
                     <% for( let i = 0; i < 3; i++ ) { %>
                     <figure class="main-image-container">
-                        <img class="side-image"                        
+                        <img class="side-image galleryImg"                        
                             <% if(product.gallery[i]){%>
                             src=<%= `${product.gallery[i]}` %>
                             <% }else{ %>
@@ -77,7 +77,7 @@
             </section>
         </div>
     </main>
-
+    <input type="button" id="themeButton" value="darkMode">
     <section class="suggestions-section-wide">
         <div class="suggestions-section-tight">
             <h3 class="titleSectionProducts">Te puede interesar</h3>
@@ -92,11 +92,6 @@
     <div class="footerContainer">
         <%-include('../partials/footer.ejs') %>
     </div>
-
-    <script src="/js/products.js"></script>
-
+    <script src="../../js/product.js"></script>
 </body>
-
-
-
 </html>

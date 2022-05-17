@@ -125,6 +125,23 @@
     background: rgba(12, 176, 147, 1);
     border: 2px solid rgba(12, 176, 147, 1);
 }
+/*DARK MODE*/
+body.dark.body-cart{
+    background-color: #222222;
+}
+body.dark .main-container{
+    color: white;
+}
+body.dark .div-producto{
+    background-color: #494F51;;
+}
+body.dark .cantidad-prod {
+    background-color: #333333;
+}
+body.dark .btn-quitar{
+    background-color: #333333;
+}
+
 @media (min-width: 425px){
     .caja-article2 {
         width: 325px;

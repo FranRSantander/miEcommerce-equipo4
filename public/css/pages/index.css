@@ -28,3 +28,10 @@
 .blockProducts {
     padding-bottom: 16px;
 }
+/*DARK MODE*/
+body.dark.homeBody{
+    background-color: #222222;
+}
+body.dark .titleSectionProducts {
+    color: white;
+}
