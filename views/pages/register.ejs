@@ -17,6 +17,7 @@
           <li>
             <input
               class="entradita"
+              id="userName"
               type="email"
               placeholder="Tu email"
               name="email"
@@ -52,8 +53,9 @@
             <p class="error-msg">*<%= error.msg %></p>
           <%}) %> <% } %>
           <li>
-            <a href="/"
-              ><button type="submit" class="boton">Crear Cuenta</button></a
+            <a href="/" class="sesionLink"
+              ><button type="submit" class="boton">Crear Cuenta</button>
+            </a
             >
           </li>
         </ul>
@@ -63,7 +65,8 @@
       </div>
     </main>
     <div class="footerContainer-1"><%-include('../partials/footer.ejs') %></div>
+    <script src="/js/activadoBotonRegister.js"></script>
     <script src="/js/utilsValidaciones.js"></script>
-    <script src="/js/eventsRegister.js"></script>
+    <script src="/js/eventsCaro.js"></script>
   </body>
 </html>

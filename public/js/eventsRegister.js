@@ -1,14 +1,13 @@
 window.addEventListener("load", function(){
     const registerForm = document.querySelector(".login");
-    const inputEmail = document.querySelector(".entradita");
-    const inputPassword = document.querySelector("#password1");
+    const inputEmail = document.querySelector(".entradita");//" "
+    const inputPassword = document.querySelector("#password1");//" "
     const inputPassword2 = document.querySelector("#password2");
-    let listUl = document.querySelector(".list-errors");
-    
     const errorEmpty = "Debe ingresar un dato";
     const errorLength = "Debe tener por lo menos 8 caracteres";
     const errorIsEmail = "Debe ser un email";
 
+    
     inputEmail.addEventListener("input", ()=>{
       let inputValue = inputEmail.value;
        if(inputValue === ""){
@@ -48,25 +47,4 @@ window.addEventListener("load", function(){
                 clearErrorList();
             }}
     })
-    function checkFieldsComplete(){
-        if ((inputEmail.value && inputPassword.value && inputPassword2.value)){
-            return true;
-        }
-    }
-
-    //deshabilitar botón si hay error o si hay algun campo vacio
-    registerForm.addEventListener("submit", (e)=>{
-        if(listUl.innerHTML.length > 0 || !checkFieldsComplete()){
-            e.preventDefault();
-        }
-      })
 })
-
-
-
-
-
-
-
-
-       
