@@ -28,7 +28,7 @@ function removeError(errorString){
 function clearErrorList(){
     document.querySelector(".list-errors").innerHTML = "";
 }
-function validate(error){
+function addError(error){
     if (!checkErrorExists(error)) {
         createLi(error);
     }
