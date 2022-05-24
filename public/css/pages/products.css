@@ -154,6 +154,9 @@ body.dark .right-description-container {
 body.dark .add-cart-button {
   background: #333333;
 }
+body.dark .anchor-return, body.dark .nav-category {
+  color: white;
+}
 
 @media (min-width: 1024px) {
   .main-product-box {
