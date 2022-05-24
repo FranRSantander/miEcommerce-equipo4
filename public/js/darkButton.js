@@ -1,4 +1,3 @@
-
 let themeButton = document.querySelector("#themeButton");
 if(themeButton !== null){
     themeButton.addEventListener('click', ()=>{
