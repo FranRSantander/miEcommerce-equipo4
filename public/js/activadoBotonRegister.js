@@ -1,5 +1,6 @@
 window.onload = function(){
-
+    //-VALIDACIONES DEL FRONT- y habilitacion / deshabilitacion del boton dependiendo de ellas
+    //captura elementos de la pantalla
     let ulErr = document.querySelector(".list-errors");
     const inputEmail = document.getElementById("userName");
     const inputPassword = document.getElementById("password1");
@@ -10,10 +11,10 @@ window.onload = function(){
     const errorLength1 = "La contraseña debe tener por lo menos 8 caracteres";
     const errorLength2 = "La confirmación debe tener por lo menos 8 caracteres";
     const errorIsEmail = "Debe ser un email"
-     //desactivacion del boton y su clase con hover
+     //desactivacion del boton por defecto y su clase con hover
     botonLogin.disabled = true;
     botonLogin.classList.remove("boton");
-    
+    //Funciones de validación. Dependiendo del caso, modifica el ul de errores
     function validaVacio(input){
         if(input.value === ""){
             addError(errorEmpty);           
@@ -50,6 +51,7 @@ window.onload = function(){
             }
         } 
     }
+    //Eventos input para que valide cuando cambia un dato en tiempo real
     inputEmail.addEventListener("input", ()=>{
         validaVacio(inputEmail);
         validaEmail(inputEmail);
@@ -66,17 +68,15 @@ window.onload = function(){
         validarYHabilitarBoton();
     
     }) 
-    
+    //Funciones para habilitar y deshabilitar el botón según las validaciones
     function deshabilitarBoton(){
         botonLogin.disabled = true;
         botonLogin.classList.remove("boton");
     }
-    
     function habilitarBoton(){
         botonLogin.disabled = false;
         botonLogin.classList.add("boton");
     }
-
     function hayInputVacio(){      
         if(inputEmail.value === "" || inputPassword.value === "" || inputPassword2.value === ""){
             return true;

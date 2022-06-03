@@ -1,4 +1,4 @@
-
+//funciones que manejan la lista ul de errores 
 function createLi(errorMsg){
     let newLi = document.createElement("li");
     let ul = document.querySelector(".list-errors");

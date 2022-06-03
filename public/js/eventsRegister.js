@@ -1,4 +1,4 @@
-
+/* 
 window.addEventListener("load", function(){
     const registerForm = document.querySelector(".login");
     const inputEmail = document.querySelector(".entradita");//" "
@@ -85,3 +85,4 @@ window.addEventListener("load", function(){
       })
 })
 
+ */
