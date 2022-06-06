@@ -11,11 +11,11 @@
 <%- include("../partials/header")%> 
     <main class="formTarjeta">
         <% if (typeof err !== "undefined") { %>
-            <div class="err"><h3>Tuvimos un incoveniente en su operación</h3><button class="errButtom"><%= err %></button><a href="">Volver a internarlo</a></div>
+            <h2><%= err %> </h2>
         <% } %>
         <% if (typeof msj !== "undefined") { %>
-            <div class="msj"><h3>Tuvimos un incoveniente en su operación</h3><button class="msjButtom"><%= msj %></button></div>
-        <% } %> 
+            <h2><%= msj %> </h2>
+        <% } %>
         <input type="button" id="themeButton" value="darkMode">
         <form class="login" method="post">
             <ul>

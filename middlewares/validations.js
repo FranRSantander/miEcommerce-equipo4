@@ -16,13 +16,11 @@ const validationsRegister = [
       .isLength({ min: 8 }).withMessage("La contraseña debe tener 8 caracteres como mínimo")
   ];
 
-   let validationsLogin = [
+   const validationsLogin = [
     check("email")
-    .notEmpty()
-    .withMessage("Debe ingresar un email")
+    .notEmpty().withMessage("Debe ingresar un email")
     .bail()
-    .isEmail()
-    .withMessage("Debe ingresar un email válido")
+    .isEmail().withMessage("Debe ingresar un email válido")
   ]
    
   module.exports = {validationsRegister, validationsLogin}

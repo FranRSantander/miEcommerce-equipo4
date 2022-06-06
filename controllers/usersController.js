@@ -9,8 +9,7 @@ let renderLogin = (req, res) => {
   res.render("login");
 }
 //Funciones para dar de alta usuario y chequear si existe
-//Valida si usuario existe, recorre el json.
-//reqBody es lo que viene por POST desde el formulario
+//Valida si usuario existe
 function userExists(reqBody){
   const {email} = reqBody;      //trae el valor del email del formulario
   let found = arrayUsers.find(element => element.email === email);
@@ -49,12 +48,17 @@ let registerUser = (req, res)=> {
   }
 }
 //Logueo
+
 let login = (req, res) => {
-  if(!userExists(req.body)){
-    res.render("login", {err:"Usuario no Existente"})
-  }else{
-    res.redirect("/");
+  const {email , pass} = req.body;
+  const userBuscado = arrayUsers.find((user)=>{
+    return user.email === email
+  });
+  if(userBuscado===undefined){
+    res.render("login", {err:"Usuario no Existente"}) 
   }
+  res.redirect("/");
+
 }
 
 

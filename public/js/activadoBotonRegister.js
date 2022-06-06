@@ -6,6 +6,7 @@ window.onload = function(){
     const inputPassword = document.getElementById("password1");
     const inputPassword2 = document.getElementById("password2");
     const botonLogin = document.querySelector(".boton");
+    const mensajeError = document.querySelector(".error-msg")
     //mensajes de error:
     const errorEmpty = "Debe ingresar un dato";
     const errorLength1 = "La contraseña debe tener por lo menos 8 caracteres";
@@ -53,16 +54,19 @@ window.onload = function(){
     }
     //Eventos input para que valide cuando cambia un dato en tiempo real
     inputEmail.addEventListener("input", ()=>{
+        sacarErrorEmailExiste();
         validaVacio(inputEmail);
         validaEmail(inputEmail);
         validarYHabilitarBoton();
     })
     inputPassword.addEventListener("input", ()=>{
+        sacarErrorEmailExiste()
         validaVacio(inputPassword);
         validaLength1(inputPassword);
         validarYHabilitarBoton();
     })
     inputPassword2.addEventListener("input", ()=>{
+        sacarErrorEmailExiste()
         validaVacio(inputPassword2);
         validaLength2(inputPassword2);
         validarYHabilitarBoton();
@@ -95,6 +99,11 @@ window.onload = function(){
         }
         else{
             deshabilitarBoton();
+        }
+    }
+    function sacarErrorEmailExiste(){
+        if(mensajeError !== null){
+            mensajeError.innerHTML = "";
         }
     }
 }
