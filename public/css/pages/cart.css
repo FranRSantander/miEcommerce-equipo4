@@ -20,7 +20,7 @@
 }
 .anchor-volver-cart {
     color: black;
-    display: flex;
+    display: inline-block;
     text-decoration: none;
 }
 /* Cartel de "Volver" y nombres de productos: */
@@ -32,6 +32,7 @@
     margin-bottom: 10px;
     font-weight: 400;
 }
+/* Elementos li con los productos en carrito: */
 .caja-article1 {
     align-items: center;
     display: flex;
@@ -42,7 +43,6 @@
     justify-content: space-around;
     width: 100%;
 }
-/* Elementos li con los productos en carrito: */
 .div-producto {
     background-color: white;
     border-radius: 16px;
@@ -129,7 +129,7 @@
 body.dark.body-cart{
     background-color: #222222;
 }
-body.dark .main-container{
+body.dark .main-container, body.dark .anchor-volver-cart{
     color: white;
 }
 body.dark .div-producto{

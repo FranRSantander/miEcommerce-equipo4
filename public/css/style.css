@@ -3,20 +3,20 @@
 @import url("./pages/loginRegister.css");
 @import url("./pages/index.css");
 @import url("./pages/products.css");
-@import url("./layaout/product-card.css");
-@import url("./layaout/ad-card.css");
-@import url("./layaout/menu-categories.css");
-@import url("./layaout/footer.css");
+@import url("./layout/product-card.css");
+@import url("./layout/ad-card.css");
+@import url("./layout/menu-categories.css");
+@import url("./layout/footer.css");
 @import url("./pages/404.css");
 @import url("./pages/404product.css");
 @import url("./pages/cart.css");
 @import url("./pages/menuPrincipal.css");
 /*Imports de Layouts*/
-@import url("./layaout/product-card.css");
-@import url("./layaout/ad-card.css");
-@import url("./layaout/menu-categories.css");
-@import url("./layaout/header1.css");
-@import url("./layaout/header.css");
+@import url("./layout/product-card.css");
+@import url("./layout/ad-card.css");
+@import url("./layout/menu-categories.css");
+@import url("./layout/header1.css");
+@import url("./layout/header.css");
 /*Hoja de reset*/
 * {
   padding: 0px;
