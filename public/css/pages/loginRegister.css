@@ -109,6 +109,22 @@
   font-size: 10px;
   padding: 2px;
 }
+.err{
+  border: black 1px solid;
+  flex-direction: column;
+  background-color: #cccccc;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+.errors .list-errors li{
+  color: rgb(146, 7, 7);
+  font-size: 10px;
+  padding: 2px;
+}
+.errors a{
+  text-decoration: none;
+}
 /*DARK MODE*/
 body.dark.loginForm::before {
   background-color: #222222;

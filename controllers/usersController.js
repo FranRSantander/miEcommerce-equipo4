@@ -57,7 +57,7 @@ let login = (req, res) => {
   if(userBuscado===undefined){
     res.render("login", {err:"Usuario no Existente"}) 
   }
-  res.redirect("/");
+ 
 
 }
 

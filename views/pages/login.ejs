@@ -11,10 +11,10 @@
 <%- include("../partials/header")%> 
     <main class="formTarjeta">
         <% if (typeof err !== "undefined") { %>
-            <h2><%= err %> </h2>
+            <div class="err"><h3>Tuvimos un incoveniente en su operación</h3><button class="errButtom"><%= err %></button><br/><a href="">Volver a intentarlo</a></div>
         <% } %>
         <% if (typeof msj !== "undefined") { %>
-            <h2><%= msj %> </h2>
+            <div class="msj"><h3>Tuvimos un incoveniente en su operación</h3><button class="msjButtom"><%= msj %></button></div>
         <% } %>
         <form class="login" method="post">
             <ul>
@@ -36,5 +36,14 @@
     <div class="footerContainer-1">
         <%-include('../partials/footer.ejs') %>
     </div>
+<<<<<<< HEAD
+=======
+    <!--
+    <script src="/js/activadoBotonLogin.js"></script>
+    -->
+    <!-- <script src="/js/eventsCaro.js"></script>
+    <script src="/js/utils.Validaciones.js"></script> -->
+
+>>>>>>> 90b48d788dcd53ec331d1595c1594ebf5836fb15
 </body>
 </html>
